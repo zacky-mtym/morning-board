@@ -1,12 +1,22 @@
 (() => {
   const WD = ["日", "月", "火", "水", "木", "金", "土"];
   const TODO_KEY = "morning-board-todos-v2";
+  const TODO_API = {
+    url: "https://epujreypcijrmsjlmvnh.supabase.co/rest/v1/morning_board_todos",
+    key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwdWpyZXlwY2lqcm1zamxtdm5oIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyMDM1MzUsImV4cCI6MjA5ODc3OTUzNX0.lq7LXDujRM6FQWaf0F6999EF7Y_Q2SkjJcLlf6fq6_0",
+    row: "default",
+  };
 
   const state = {
     draft: "",
     periods: {},
     todos: loadTodos(),
+    todoError: "",
   };
+
+  let pushing = false;
+  let pendingPush = false;
+  let editGen = 0;
 
   function loadTodos() {
     try {
@@ -19,8 +29,74 @@
     return [];
   }
 
-  function saveTodos() {
+  function todoHeaders(extra) {
+    return {
+      apikey: TODO_API.key,
+      Authorization: "Bearer " + TODO_API.key,
+      "Content-Type": "application/json",
+      ...(extra || {}),
+    };
+  }
+
+  function saveLocal() {
     localStorage.setItem(TODO_KEY, JSON.stringify(state.todos));
+  }
+
+  function saveTodos() {
+    editGen += 1;
+    saveLocal();
+    pushTodos();
+  }
+
+  async function pullTodos() {
+    const gen = editGen;
+    try {
+      const r = await fetch(`${TODO_API.url}?id=eq.${TODO_API.row}&select=items`, {
+        headers: todoHeaders(),
+        cache: "no-store",
+      });
+      if (!r.ok) throw new Error("todo " + r.status);
+      const rows = await r.json();
+      const items = Array.isArray(rows[0]?.items) ? rows[0].items : [];
+      if (gen !== editGen || pushing || pendingPush) return;
+      if (items.length === 0 && state.todos.length > 0) {
+        await pushTodos();
+        return;
+      }
+      state.todos = items;
+      state.todoError = "";
+      saveLocal();
+      render();
+    } catch {
+      state.todoError = "ToDoの同期に失敗しました。この端末の内容は残しています。";
+      render();
+    }
+  }
+
+  async function pushTodos() {
+    if (pushing) {
+      pendingPush = true;
+      return;
+    }
+    pushing = true;
+    try {
+      do {
+        pendingPush = false;
+        const items = state.todos;
+        const r = await fetch(`${TODO_API.url}?id=eq.${TODO_API.row}`, {
+          method: "PATCH",
+          headers: todoHeaders({ Prefer: "return=minimal" }),
+          body: JSON.stringify({ items, updated_at: new Date().toISOString() }),
+        });
+        if (!r.ok) throw new Error("todo save " + r.status);
+        state.todoError = "";
+      } while (pendingPush);
+    } catch {
+      state.todoError = "ToDoを保存できませんでした。通信できるときに再度開いてください。";
+      render();
+    } finally {
+      pushing = false;
+    }
   }
 
   function todayJst() {
@@ -336,6 +412,7 @@
             <input id="todo-draft" value="${esc(state.draft)}" placeholder="やることを追加">
             <button type="button" id="todo-add">追加</button>
           </div>
+          ${state.todoError ? `<div class="todo-error">${esc(state.todoError)}</div>` : ""}
           ${todos}
         </section>
 
@@ -398,4 +475,9 @@
       render();
     })
     .catch(() => render());
+
+  pullTodos();
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") pullTodos();
+  });
 })();
