@@ -1,0 +1,16 @@
+:root{
+  --text-display-size:56px;  --text-display-lh:1.28; --text-display-weight:700; --text-display-ls:.01em;
+  --text-h1-size:40px;       --text-h1-lh:1.36;      --text-h1-weight:700;     --text-h1-ls:.01em;
+  --text-h2-size:32px;       --text-h2-lh:1.4;       --text-h2-weight:700;
+  --text-h3-size:24px;       --text-h3-lh:1.5;       --text-h3-weight:700;
+  --text-h4-size:20px;       --text-h4-lh:1.6;       --text-h4-weight:700;
+  --text-lead-size:18px;     --text-lead-lh:1.9;     --text-lead-weight:400;
+  --text-body-size:16px;     --text-body-lh:1.9;     --text-body-weight:400;
+  --text-small-size:14px;    --text-small-lh:1.8;    --text-small-weight:400;
+  --text-caption-size:12px;  --text-caption-lh:1.7;  --text-caption-weight:500;
+  --text-label-size:13px;    --text-label-lh:1.4;    --text-label-weight:700;  --text-label-ls:.08em;
+
+  /* Japanese text needs generous leading; never go below 1.7 for body copy. */
+  --leading-tight:1.36; --leading-normal:1.6; --leading-relaxed:1.9;
+  --tracking-tight:0; --tracking-normal:.01em; --tracking-label:.08em;
+}

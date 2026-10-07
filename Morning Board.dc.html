@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_ds/workstyle-evolution-design-system-407e19c6-38a8-4864-b2e5-5401ef212683/tokens/colors.css">
+<link rel="stylesheet" href="_ds/workstyle-evolution-design-system-407e19c6-38a8-4864-b2e5-5401ef212683/tokens/typography.css">
+<style>body{margin:0;background:#0f1729;font-family:'Noto Sans JP',sans-serif}a{color:#c9b27c}a:hover{color:#e8dcc0}*{box-sizing:border-box}::-webkit-scrollbar{height:4px}::-webkit-scrollbar-thumb{background:#2c3a58;border-radius:4px}</style>
+</helmet>
+<div style="min-height:100vh;background:#0f1729;color:#ece8df;font-family:'Noto Sans JP',sans-serif;line-height:1.7">
+<div style="max-width:720px;margin:0 auto;padding:40px 16px 64px;display:flex;flex-direction:column;gap:16px">
+
+<header style="padding:0 4px 12px">
+<div style="font:500 11px 'JetBrains Mono',monospace;letter-spacing:.2em;color:#c9b27c">2026 / 10 / 08</div>
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;margin-top:4px">
+<h1 style="margin:0;font:500 24px/1.3 'Noto Sans JP',sans-serif;letter-spacing:.06em">Morning Board</h1>
+<div style="font-size:12px;color:#a3a9b8">最終更新：10/8（木）7:00</div></div>
+<div style="width:48px;height:1px;background:#c9b27c;margin-top:16px"></div>
+</header>
+
+<section style="background:#17213a;border:1px solid #26324f;border-radius:16px;padding:20px 18px">
+<h2 style="margin:0 0 4px;font:700 17px 'Noto Sans JP',sans-serif;letter-spacing:.04em">向こう1週間の予定</h2>
+<div style="display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0 16px">
+<sc-for list="{{ legend }}" as="l" hint-placeholder-count="4"><span style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#a3a9b8"><span style="width:9px;height:9px;border-radius:50%;background:{{ l.color }}"></span>{{ l.name }}</span></sc-for>
+</div>
+<sc-for list="{{ days }}" as="d" hint-placeholder-count="7">
+<div style="display:grid;grid-template-columns:68px 1fr;gap:12px;padding:12px 0;border-top:1px solid #26324f">
+<div><div style="font:500 20px/1.2 'JetBrains Mono',monospace;color:{{ d.dateColor }};white-space:nowrap">{{ d.date }}</div><div style="font-size:12px;color:{{ d.dateColor }};white-space:nowrap">{{ d.wd }}</div><div style="font-size:10px;color:#c9b27c">{{ d.todayMark }}</div></div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{ d.events }}" as="e" hint-placeholder-count="1">
+<div style="display:grid;grid-template-columns:96px 1fr;gap:8px;align-items:baseline">
+<span style="font:400 12px 'JetBrains Mono',monospace;color:#a3a9b8;white-space:nowrap">{{ e.time }}</span>
+<div style="display:flex;gap:8px;align-items:baseline"><span style="flex:none;width:9px;height:9px;border-radius:50%;background:{{ e.color }};transform:translateY(0)"></span><div><div style="font-size:15px;line-height:1.5">{{ e.title }}</div><div style="font-size:11px;color:#8890a3">{{ e.cal }}</div></div></div>
+</div>
+</sc-for>
+<sc-if value="{{ d.empty }}" hint-placeholder-val="{{ false }}"><div style="font-size:13px;color:#6c748a">予定なし</div></sc-if>
+</div></div>
+</sc-for>
+</section>
+
+<section style="background:#17213a;border:1px solid #26324f;border-radius:16px;padding:20px 18px">
+<h2 style="margin:0 0 14px;font:700 17px 'Noto Sans JP',sans-serif;letter-spacing:.04em">今日やることのメモ</h2>
+<div style="display:flex;gap:8px;margin-bottom:8px">
+<input value="{{ draft }}" onInput="{{ onDraft }}" onKeyDown="{{ onKey }}" placeholder="やることを追加" style="flex:1;min-width:0;background:#0f1729;border:1px solid #2c3a58;border-radius:8px;padding:10px 12px;color:#ece8df;font:400 16px 'Noto Sans JP',sans-serif;outline:none" style-focus="border-color:#c9b27c">
+<button onClick="{{ addTodo }}" style="flex:none;background:#c9b27c;color:#131f39;border:0;border-radius:999px;padding:0 20px;font:700 14px 'Noto Sans JP',sans-serif;cursor:pointer" style-active="transform:scale(.98)">追加</button>
+</div>
+<sc-for list="{{ todos }}" as="t" hint-placeholder-count="4">
+<label style="display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-top:1px solid #26324f;cursor:pointer">
+<input type="checkbox" checked="{{ t.done }}" onChange="{{ t.toggle }}" style="flex:none;width:20px;height:20px;margin:2px 0 0;accent-color:#c9b27c">
+<span style="flex:1"><span style="font-size:15px;color:{{ t.color }};text-decoration:{{ t.deco }}">{{ t.text }}</span><span style="display:block;font-size:11px;color:#c9b27c">{{ t.carry }}</span></span>
+</label>
+</sc-for>
+</section>
+
+<section style="background:#17213a;border:1px solid #26324f;border-radius:16px;padding:20px 18px">
+<h2 style="margin:0 0 16px;font:700 17px 'Noto Sans JP',sans-serif;letter-spacing:.04em">石手川ダムの貯水率</h2>
+<div style="display:flex;flex-wrap:wrap;gap:12px 28px;align-items:flex-end">
+<div><div style="font-size:12px;color:#a3a9b8">貯水率</div><div style="font:500 32px/1.2 'JetBrains Mono',monospace">94.2%</div></div>
+<div><div style="font-size:12px;color:#a3a9b8">前日比</div><div style="font:500 18px/1.8 'JetBrains Mono',monospace;color:#c9877f">-0.9pt</div></div>
+<div><div style="font-size:12px;color:#c9b27c">平年値</div><div style="font:500 18px/1.8 'JetBrains Mono',monospace">88.4%</div></div>
+</div>
+</section>
+
+<section style="background:#17213a;border:1px solid #26324f;border-radius:16px;padding:20px 18px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px"><h2 style="margin:0;font:700 17px 'Noto Sans JP',sans-serif;letter-spacing:.04em">今日の天気・週間天気</h2><span style="font-size:12px;color:#a3a9b8">松山市</span></div>
+<sc-if value="{{ weatherFailed }}" hint-placeholder-val="{{ true }}">
+<div style="border:1px dashed #3a4968;border-radius:12px;padding:28px 16px;text-align:center"><div style="font-size:14px;color:#a3a9b8">取得失敗</div><div style="font-size:11px;color:#6c748a;margin-top:4px">次回の更新（明朝7:00）で再取得します</div></div>
+</sc-if>
+<sc-if value="{{ weatherOk }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;align-items:center;gap:18px;padding-bottom:16px">
+<div style="flex:none;width:72px;height:72px;border-radius:50%;border:1px solid #c9b27c;display:flex;align-items:center;justify-content:center;font:500 30px 'Noto Sans JP',sans-serif;color:#e8dcc0">晴</div>
+<div style="flex:1"><div style="font-size:12px;color:#a3a9b8">今日　晴れのち曇り</div>
+<div style="font:500 34px/1.2 'JetBrains Mono',monospace"><span style="color:#d9a58f">24°</span><span style="color:#6c748a;font-size:22px"> / </span><span style="color:#8fb0d1">15°</span></div>
+<div style="font-size:13px;color:#a3a9b8">降水確率 <span style="font:500 20px 'JetBrains Mono',monospace;color:#ece8df">20%</span></div></div>
+</div>
+<div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;border-top:1px solid #26324f;padding-top:14px">
+<sc-for list="{{ week }}" as="w" hint-placeholder-count="7">
+<div style="flex:none;width:64px;text-align:center;padding:10px 0;border-radius:12px;background:#0f1729;border:1px solid #26324f">
+<div style="font-size:11px;color:#a3a9b8">{{ w.d }}</div>
+<div style="margin:6px auto;width:32px;height:32px;border-radius:50%;border:1px solid #3a4968;display:flex;align-items:center;justify-content:center;font-size:14px;color:#e8dcc0">{{ w.icon }}</div>
+<div style="font:500 13px 'JetBrains Mono',monospace;color:#d9a58f">{{ w.hi }}°</div><div style="font:500 13px 'JetBrains Mono',monospace;color:#8fb0d1">{{ w.lo }}°</div>
+<div style="font-size:10px;color:#6c748a">{{ w.pop }}%</div>
+</div>
+</sc-for>
+</div>
+</sc-if>
+</section>
+
+<sc-for list="{{ stocks }}" as="s" hint-placeholder-count="3">
+<section style="background:#17213a;border:1px solid #26324f;border-radius:16px;padding:20px 18px">
+<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+<div><div style="font:700 16px 'Noto Sans JP',sans-serif">{{ s.name }}</div><div style="font:400 11px 'JetBrains Mono',monospace;color:#a3a9b8">{{ s.code }}　{{ s.cur }}</div></div>
+<div style="text-align:right"><div style="font:500 24px/1.2 'JetBrains Mono',monospace">{{ s.close }}</div><div style="font-size:11px;color:#a3a9b8">前日終値</div></div>
+</div>
+<div style="margin-top:6px;font:500 14px 'JetBrains Mono',monospace;color:{{ s.color }}">{{ s.chg }}　{{ s.pct }}<span style="font:400 11px 'Noto Sans JP';color:#a3a9b8">　前日比</span></div>
+<svg viewBox="0 0 300 100" preserveAspectRatio="none" style="width:100%;height:110px;margin:14px 0 8px;display:block">
+<path d="{{ s.area }}" fill="{{ s.color }}" opacity="0.12"></path>
+<path d="{{ s.line }}" fill="none" stroke="{{ s.color }}" stroke-width="1.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"></path>
+</svg>
+<div style="display:flex;gap:6px">
+<sc-for list="{{ s.periods }}" as="p" hint-placeholder-count="3"><button onClick="{{ p.pick }}" style="border:1px solid {{ p.bd }};background:{{ p.bg }};color:{{ p.fg }};border-radius:999px;padding:4px 14px;font:500 12px 'Noto Sans JP',sans-serif;cursor:pointer">{{ p.label }}</button></sc-for>
+</div>
+</section>
+</sc-for>
+
+<div style="text-align:center;font-size:11px;color:#6c748a;padding-top:8px">毎朝7:00に自動更新　※数値はダミーです</div>
+</div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;weatherFailed&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { draft: '', periods: { TSLA: 0, SPCX: 0, '7011.T': 0 }, todos: [
+    { id: 1, text: '歯科の予約を入れる', done: false, carry: '10/6から持ち越し' },
+    { id: 2, text: '委員会の資料を印刷する', done: false, carry: '' },
+    { id: 3, text: '請求書の確認', done: true, carry: '10/6から持ち越し' },
+    { id: 4, text: '牛乳を買う', done: false, carry: '' } ] };
+  series(seed, n, end, vol) {
+    let s = seed, r = () => (s = (s * 16807) % 2147483647) / 2147483647, v = 0, a = [];
+    for (let i = 0; i < n; i++) { v += (r() - 0.48) * vol; a.push(v); }
+    const k = end / (1 + a[n - 1] * 0 + 0) ; const off = end - a[n - 1];
+    return a.map(x => x + off);
+  }
+  path(a) {
+    const mn = Math.min(...a), mx = Math.max(...a), n = a.length;
+    const pts = a.map((v, i) => [(i / (n - 1)) * 300, 92 - ((v - mn) / (mx - mn || 1)) * 84]);
+    const line = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+    return { line, area: line + ' L300 100 L0 100 Z' };
+  }
+  renderVals() {
+    const cal = { w: ['央仕事', '#4a6aa8'], f: ['尾崎家', '#3f7a5e'], p: ['私的', '#9a4a5a'], h: ['日本の祝日', '#b8923f'] };
+    const legend = Object.values(cal).map(c => ({ name: c[0], color: c[1] }));
+    const E = (time, title, k) => ({ time, title, cal: cal[k][0], color: cal[k][1] });
+    const wd = ['日', '月', '火', '水', '木', '金', '土'];
+    const ev = [
+      [E('10:00-10:30', '会議', 'w'), E('13:30-14:30', '委員会', 'w')],
+      [E('19:00', '歯科', 'p')],
+      [E('終日', '出張（東京）', 'w')],
+      [E('終日', '参観日', 'f'), E('15:00-16:00', '定例ミーティング', 'w')],
+      [E('終日', 'スポーツの日', 'h')],
+      [E('11:30', 'ランチ', 'p')],
+      [E('18:00', '家族で外食', 'f')]
+    ];
+    const days = [0, 1, 2, 3, 4, 5, 6].map(i => {
+      const dt = new Date(2026, 9, 8 + i);
+      const events = ev[i];
+      return { date: `${dt.getMonth() + 1}/${dt.getDate()}`, wd: `（${wd[dt.getDay()]}）`, todayMark: i === 0 ? ' 今日' : '', dateColor: i === 0 ? '#e8dcc0' : '#ece8df', events, empty: events.length === 0 };
+    });
+    const todos = this.state.todos.map(t => ({ ...t, color: t.done ? '#6c748a' : '#ece8df', deco: t.done ? 'line-through' : 'none',
+      toggle: () => this.setState(s => ({ todos: s.todos.map(x => x.id === t.id ? { ...x, done: !x.done } : x) })) }));
+    const add = () => { const v = this.state.draft.trim(); if (v) this.setState(s => ({ todos: [...s.todos, { id: Date.now(), text: v, done: false, carry: '' }], draft: '' })); };
+    const week = [['木', '晴', 24, 15, 20], ['金', '曇', 23, 16, 30], ['土', '雨', 21, 17, 80], ['日', '雨', 20, 16, 70], ['月', '曇', 22, 14, 30], ['火', '晴', 24, 14, 10], ['水', '晴', 25, 15, 10]].map(w => ({ d: w[0], icon: w[1], hi: w[2], lo: w[3], pop: w[4] }));
+    const fail = this.props.weatherFailed ?? true;
+    const defs = [
+      { name: 'テスラ', code: 'TSLA', cur: 'ドル', close: '$248.50', prev: 248.5, chg: '+$3.12', pct: '+1.27%', up: true, seed: 11, vol: 6, dec: 2 },
+      { name: 'SpaceX', code: 'SPCX', cur: 'ドル', close: '$142.80', prev: 142.8, chg: '-$1.65', pct: '-1.14%', up: false, seed: 29, vol: 4, dec: 2 },
+      { name: '三菱重工業', code: '7011.T', cur: '円', close: '¥3,215', prev: 3215, chg: '+¥42', pct: '+1.32%', up: true, seed: 47, vol: 60, dec: 0 }
+    ];
+    const lens = [22, 64, 250], labels = ['1か月', '3か月', '1年'];
+    const stocks = defs.map(d => {
+      const pi = this.state.periods[d.code];
+      const p = this.path(this.series(d.seed + pi * 7, lens[pi], d.prev, d.vol));
+      return { ...d, color: d.up ? '#7fae96' : '#c9877f', line: p.line, area: p.area,
+        periods: labels.map((l, i) => ({ label: l, bg: i === pi ? '#c9b27c' : 'transparent', fg: i === pi ? '#131f39' : '#a3a9b8', bd: i === pi ? '#c9b27c' : '#3a4968',
+          pick: () => this.setState(s => ({ periods: { ...s.periods, [d.code]: i } })) })) };
+    });
+    return { legend, days, todos, week, stocks, weatherFailed: fail, weatherOk: !fail, draft: this.state.draft,
+      onDraft: e => this.setState({ draft: e.target.value }), onKey: e => { if (e.key === 'Enter') add(); }, addTodo: add };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* Webfonts. Source site is Framer-hosted and its CSS is not cross-origin readable,
+   so the exact faces could not be extracted. Noto Sans JP is the substitution
+   (see readme.md > VISUAL FOUNDATIONS > Type). */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap");
+:root{
+  --font-sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+  --font-display:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+}

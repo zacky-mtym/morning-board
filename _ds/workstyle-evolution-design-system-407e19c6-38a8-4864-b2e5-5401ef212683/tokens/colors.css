@@ -1,0 +1,61 @@
+:root{
+  /* Brand — sampled from the corporate logo lockup (assets/logo-wordmark.png) */
+  --wse-navy-900:#131f39;
+  --wse-navy-800:#1b2a4a;
+  --wse-navy-700:#24365c;
+  --wse-blue-700:#084690;
+  --wse-blue-600:#0b5bb5;
+  --wse-blue-500:#1877e0;
+  --wse-blue-400:#4e88ca;
+  --wse-sky-400:#43adff;
+  --wse-sky-300:#7cc6ff;
+  --wse-sky-200:#a8d8ff;
+  --wse-sky-100:#d6ecff;
+  --wse-sky-50:#eaf4ff;
+
+  /* Neutrals */
+  --wse-ink:#0f1723;
+  --wse-slate-700:#404a54;
+  --wse-slate-500:#65748b;
+  --wse-slate-400:#8b97a8;
+  --wse-slate-300:#a5aab3;
+  --wse-slate-200:#dadee3;
+  --wse-slate-100:#eef1f5;
+  --wse-slate-50:#f6f8fb;
+  --wse-white:#ffffff;
+
+  /* Semantic status */
+  --wse-success:#0f9d63;
+  --wse-warning:#d98218;
+  --wse-danger:#d24444;
+  --wse-info:var(--wse-blue-500);
+
+  /* Semantic aliases — always prefer these in components */
+  --text-primary:var(--wse-navy-900);
+  --text-secondary:var(--wse-slate-500);
+  --text-muted:var(--wse-slate-400);
+  --text-inverse:var(--wse-white);
+  --text-link:var(--wse-blue-600);
+  --text-link-hover:var(--wse-blue-700);
+  --text-accent:var(--wse-blue-700);
+
+  --surface-page:var(--wse-white);
+  --surface-subtle:var(--wse-slate-50);
+  --surface-card:var(--wse-white);
+  --surface-tint:var(--wse-sky-50);
+  --surface-inverse:var(--wse-navy-900);
+
+  --border-default:var(--wse-slate-200);
+  --border-subtle:var(--wse-slate-100);
+  --border-strong:var(--wse-slate-300);
+  --border-accent:var(--wse-sky-200);
+
+  --brand-primary:var(--wse-blue-700);
+  --brand-primary-hover:var(--wse-navy-800);
+  --brand-accent:var(--wse-sky-400);
+
+  /* Signature gradients — navy to accent blue, always left→right or 135deg */
+  --gradient-brand:linear-gradient(135deg,var(--wse-navy-900) 0%,var(--wse-blue-700) 58%,var(--wse-sky-400) 100%);
+  --gradient-tint:linear-gradient(180deg,var(--wse-sky-50) 0%,var(--wse-white) 100%);
+  --gradient-scrim:linear-gradient(180deg,rgba(19,31,57,0) 0%,rgba(19,31,57,.72) 100%); /* @kind color */
+}
