@@ -252,6 +252,7 @@
         wd: `（${WD[dt.getDay()]}）`,
         todayMark: i === 0 ? " 今日" : "",
         dateColor: i === 0 ? "#e8dcc0" : "#ece8df",
+        today: i === 0,
         events,
         empty: events.length === 0,
       };
@@ -343,7 +344,7 @@
           </div></div>`
               )
               .join("");
-        return `<div class="day">
+        return `<div class="day${d.today ? " today" : ""}">
         <div>
           <div class="day-date" style="color:${d.dateColor}">${esc(d.date)}</div>
           <div class="day-wd" style="color:${d.dateColor}">${esc(d.wd)}</div>
@@ -433,7 +434,7 @@
         </header>
 
         <section class="card">
-          <h2 class="tight">向こう1週間の予定</h2>
+          <h2 class="tight">Next 7 Days</h2>
           <div class="legend">${legend}</div>
           ${dayHtml}
         </section>

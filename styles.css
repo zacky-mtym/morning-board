@@ -111,6 +111,13 @@ a:hover { color: var(--gold-soft); }
   padding: 12px 0;
   border-top: 1px solid var(--line);
 }
+.day.today {
+  background: rgba(232, 220, 192, 0.08);
+  border: 1px solid rgba(201, 178, 124, 0.32);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 0 -6px 4px;
+}
 .day-date {
   font: 500 20px/1.2 var(--mono);
   white-space: nowrap;
