@@ -1,6 +1,7 @@
 (() => {
   const WD = ["日", "月", "火", "水", "木", "金", "土"];
   const TODO_KEY = "morning-board-todos-v2";
+  const TODO_DONE_MS = 7 * 24 * 60 * 60 * 1000;
   const TODO_API = {
     url: "https://epujreypcijrmsjlmvnh.supabase.co/rest/v1/morning_board_todos",
     key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwdWpyZXlwY2lqcm1zamxtdm5oIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyMDM1MzUsImV4cCI6MjA5ODc3OTUzNX0.lq7LXDujRM6FQWaf0F6999EF7Y_Q2SkjJcLlf6fq6_0",
@@ -42,6 +43,33 @@
     localStorage.setItem(TODO_KEY, JSON.stringify(state.todos));
   }
 
+  function pruneTodos() {
+    const cutoff = Date.now() - TODO_DONE_MS;
+    let changed = false;
+    const next = [];
+    for (const t of state.todos) {
+      const item = { ...t };
+      if (item.done) {
+        const stamped = Date.parse(item.doneAt);
+        if (!Number.isFinite(stamped)) {
+          item.doneAt = new Date().toISOString();
+          changed = true;
+        } else if (stamped <= cutoff) {
+          changed = true;
+          continue;
+        }
+      } else if (item.doneAt) {
+        delete item.doneAt;
+        changed = true;
+      }
+      next.push(item);
+    }
+    if (changed) state.todos = next;
+    return changed;
+  }
+
+  if (pruneTodos()) saveLocal();
+
   function saveTodos() {
     editGen += 1;
     saveLocal();
@@ -60,12 +88,16 @@
       const items = Array.isArray(rows[0]?.items) ? rows[0].items : [];
       if (gen !== editGen || pushing || pendingPush) return;
       if (items.length === 0 && state.todos.length > 0) {
+        pruneTodos();
         await pushTodos();
+        render();
         return;
       }
       state.todos = items;
+      const pruned = pruneTodos();
       state.todoError = "";
       saveLocal();
+      if (pruned) await pushTodos();
       render();
     } catch {
       state.todoError = "ToDoの同期に失敗しました。この端末の内容は残しています。";
@@ -447,6 +479,8 @@
       el.addEventListener("change", () => {
         const i = Number(el.getAttribute("data-todo"));
         state.todos[i].done = el.checked;
+        if (el.checked) state.todos[i].doneAt = new Date().toISOString();
+        else delete state.todos[i].doneAt;
         saveTodos();
         render();
       });
