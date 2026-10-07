@@ -2,7 +2,7 @@
 import json
 import re
 import urllib.request
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, date
 
 JST = timezone(timedelta(hours=9))
 UA = {"User-Agent": "MorningBoard/1.0"}
@@ -121,52 +121,48 @@ HOLIDAY_ICS = (
 )
 
 
-def _ics_prop(block: str, name: str):
-    m = re.search(rf"(?:^|\n){name}([^:\n]*):([^\n]+)", block)
-    if not m:
-        return None, None
-    return m.group(1), m.group(2).strip()
-
-
-def _ics_datetime(params: str, value: str):
-    value = value.replace("\\", "")
-    if "VALUE=DATE" in (params or "") or (len(value) == 8 and "T" not in value):
-        return {"allDay": True, "date": f"{value[0:4]}-{value[4:6]}-{value[6:8]}"}
-    if value.endswith("Z") and "T" in value:
-        dt = datetime.strptime(value, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc).astimezone(JST)
-        return {"allDay": False, "iso": dt.strftime("%Y-%m-%dT%H:%M:%S+09:00")}
-    if "T" in value:
-        raw = value[:15]
-        dt = datetime.strptime(raw, "%Y%m%dT%H%M%S").replace(tzinfo=JST)
-        return {"allDay": False, "iso": dt.strftime("%Y-%m-%dT%H:%M:%S+09:00")}
-    return {"allDay": True, "date": f"{value[0:4]}-{value[4:6]}-{value[6:8]}"}
+def _as_jst(dt):
+    if dt.tzinfo is None:
+        return dt.replace(tzinfo=JST)
+    return dt.astimezone(JST)
 
 
 def fetch_ics_events(url: str, cal_id: str, start: datetime, end: datetime):
-    text = get(url).decode("utf-8", errors="replace").replace("\r\n", "\n")
-    text = re.sub(r"\n[ \t]", "", text)
+    from icalendar import Calendar
+    import recurring_ical_events
+
+    text = get(url).decode("utf-8", errors="replace")
+    calendar = Calendar.from_ical(text)
     out = []
-    for block in text.split("BEGIN:VEVENT")[1:]:
-        _, summary = _ics_prop(block, "SUMMARY")
-        sp, sv = _ics_prop(block, "DTSTART")
-        ep, ev = _ics_prop(block, "DTEND")
-        if not summary or not sv:
+    for ev in recurring_ical_events.of(calendar).between(start, end):
+        summary = str(ev.get("SUMMARY") or "").replace("\\,", ",").replace("\\n", " ").strip()
+        if not summary:
             continue
-        summary = summary.replace("\\,", ",").replace("\\n", " ")
-        start_p = _ics_datetime(sp or "", sv)
-        if start_p.get("allDay"):
-            day = start_p["date"]
-            if start.strftime("%Y-%m-%d") <= day <= end.strftime("%Y-%m-%d"):
-                out.append({"cal": cal_id, "title": summary, "allDay": True, "date": day})
+        dtstart = ev.start
+        dtend = ev.end
+        if not isinstance(dtstart, datetime):
+            day0 = dtstart if isinstance(dtstart, date) else dtstart.date()
+            if dtend is None:
+                day1 = day0 + timedelta(days=1)
+            elif isinstance(dtend, datetime):
+                day1 = _as_jst(dtend).date()
+            else:
+                day1 = dtend
+            d = day0
+            while d < day1:
+                ds = d.strftime("%Y-%m-%d")
+                if start.strftime("%Y-%m-%d") <= ds <= end.strftime("%Y-%m-%d"):
+                    out.append({"cal": cal_id, "title": summary, "allDay": True, "date": ds})
+                d += timedelta(days=1)
             continue
-        iso = start_p["iso"]
-        if not (start.strftime("%Y-%m-%d") <= iso[:10] <= end.strftime("%Y-%m-%d")):
-            continue
-        end_iso = iso
-        if ev:
-            end_p = _ics_datetime(ep or "", ev)
-            end_iso = end_p.get("iso") or iso
-        out.append({"cal": cal_id, "title": summary, "start": iso, "end": end_iso})
+        start_j = _as_jst(dtstart)
+        end_j = _as_jst(dtend) if isinstance(dtend, datetime) else start_j
+        out.append({
+            "cal": cal_id,
+            "title": summary,
+            "start": start_j.strftime("%Y-%m-%dT%H:%M:%S+09:00"),
+            "end": end_j.strftime("%Y-%m-%dT%H:%M:%S+09:00"),
+        })
     return out
 
 

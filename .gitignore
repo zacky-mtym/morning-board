@@ -1,6 +1,8 @@
 .thumbnail
 *.zip
 .cursor/
+.env
+.env.*
 __pycache__/
 *.pyc
 .DS_Store
