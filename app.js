@@ -426,7 +426,7 @@
         <header class="hdr">
           <div class="hdr-kicker">${esc(kicker)}</div>
           <div class="hdr-row">
-            <h1>Morning Board</h1>
+            <h1>Akira’s board</h1>
             <div class="hdr-updated">最終更新：${esc(fmtStamp(board.updatedAt))}</div>
           </div>
           <div class="hdr-rule"></div>
