@@ -68,9 +68,22 @@
     return changed;
   }
 
-  if (pruneTodos()) saveLocal();
+  function sortTodos() {
+    const open = [];
+    const done = [];
+    for (const t of state.todos) (t.done ? done : open).push(t);
+    const next = open.concat(done);
+    const changed = next.some((t, i) => t !== state.todos[i]);
+    if (changed) state.todos = next;
+    return changed;
+  }
+
+  const prunedOnLoad = pruneTodos();
+  const sortedOnLoad = sortTodos();
+  if (prunedOnLoad || sortedOnLoad) saveLocal();
 
   function saveTodos() {
+    sortTodos();
     editGen += 1;
     saveLocal();
     pushTodos();
@@ -89,15 +102,17 @@
       if (gen !== editGen || pushing || pendingPush) return;
       if (items.length === 0 && state.todos.length > 0) {
         pruneTodos();
+        sortTodos();
         await pushTodos();
         render();
         return;
       }
       state.todos = items;
       const pruned = pruneTodos();
+      const sorted = sortTodos();
       state.todoError = "";
       saveLocal();
-      if (pruned) await pushTodos();
+      if (pruned || sorted) await pushTodos();
       render();
     } catch {
       state.todoError = "ToDoの同期に失敗しました。この端末の内容は残しています。";

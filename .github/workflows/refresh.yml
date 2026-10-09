@@ -2,7 +2,8 @@ name: Refresh morning board
 
 on:
   schedule:
-    - cron: "0 18 * * *"
+    # 00:00 JST = 15:00 UTC
+    - cron: "0 15 * * *"
   workflow_dispatch:
 
 permissions:
