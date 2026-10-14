@@ -58,9 +58,85 @@ def fetch_weather() -> dict:
         "https://api.open-meteo.com/v1/forecast"
         "?latitude=33.839&longitude=132.766"
         "&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max"
+        "&hourly=weather_code,precipitation_probability"
         "&timezone=Asia%2FTokyo&forecast_days=7"
     )
     return json.loads(get(url).decode("utf-8"))
+
+
+# Higher means a worse condition. Daily Open-Meteo codes use the worst hour of
+# the whole date, so overnight rain paints a sunny day as rain.
+def weather_severity(code):
+    if code is None:
+        return -1
+    if code <= 1:
+        return code
+    if code <= 3:
+        return 10 + code
+    if code in (45, 48):
+        return 20
+    if 51 <= code <= 67 or code in (80, 81, 82):
+        return 30 + code
+    if 71 <= code <= 77 or code in (85, 86):
+        return 50 + code
+    if code >= 95:
+        return 70 + code
+    return 30 + code
+
+
+def _daytime_slots(hourly, day):
+    times = hourly.get("time") or []
+    codes = hourly.get("weather_code") or []
+    pops = hourly.get("precipitation_probability") or []
+    slots = []
+    for t, code, pop in zip(times, codes, pops):
+        if not t.startswith(day):
+            continue
+        hour = int(t[11:13])
+        if 6 <= hour <= 18:
+            slots.append((hour, code, pop))
+    return slots
+
+
+def daytime_summary(hourly, day, now):
+    """Weather code and precipitation probability for 06:00–18:00.
+
+    Hours already past are left out of today, so rain before dawn does not
+    stay on the board after it has ended. Later days use the full daytime window.
+    """
+    slots = _daytime_slots(hourly, day)
+    if not slots:
+        return None, None
+    if day == now.strftime("%Y-%m-%d"):
+        upcoming = [slot for slot in slots if slot[0] >= now.hour]
+        if upcoming:
+            slots = upcoming
+    code = max((slot[1] for slot in slots), key=weather_severity)
+    probs = [slot[2] for slot in slots if slot[2] is not None]
+    pop = max(probs) if probs else None
+    return code, pop
+
+
+def summarize_weather_days(payload, now):
+    daily = payload["daily"]
+    hourly = payload.get("hourly") or {}
+    days = []
+    for i, day in enumerate(daily["time"]):
+        code = daily["weather_code"][i]
+        pop = daily["precipitation_probability_max"][i]
+        daytime_code, daytime_pop = daytime_summary(hourly, day, now)
+        if daytime_code is not None:
+            code = daytime_code
+        if daytime_pop is not None:
+            pop = daytime_pop
+        days.append({
+            "date": day,
+            "code": code,
+            "hi": daily["temperature_2m_max"][i],
+            "lo": daily["temperature_2m_min"][i],
+            "pop": pop,
+        })
+    return days
 
 
 def fetch_chart(symbol: str, range_: str = "1y", interval: str = "1d") -> dict:

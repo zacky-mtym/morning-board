@@ -12,6 +12,7 @@ from fetch_public import (
     fetch_weather,
     fetch_chart,
     fetch_ics_events,
+    summarize_weather_days,
     HOLIDAY_ICS,
     JST,
 )
@@ -105,19 +106,7 @@ def main():
     }
     try:
         w = fetch_weather()
-        d = w["daily"]
-        board["weather"] = {
-            "days": [
-                {
-                    "date": d["time"][i],
-                    "code": d["weather_code"][i],
-                    "hi": d["temperature_2m_max"][i],
-                    "lo": d["temperature_2m_min"][i],
-                    "pop": d["precipitation_probability_max"][i],
-                }
-                for i in range(len(d["time"]))
-            ]
-        }
+        board["weather"] = {"days": summarize_weather_days(w, datetime.now(JST))}
     except Exception as e:
         board["weatherError"] = str(e)
     try:
