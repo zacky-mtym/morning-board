@@ -333,8 +333,6 @@
     if (!board || !root) return;
     const scrollY = window.scrollY;
 
-    const now = todayJst();
-    const kicker = `${now.getFullYear()} / ${String(now.getMonth() + 1).padStart(2, "0")} / ${String(now.getDate()).padStart(2, "0")}`;
     const days = daysFor(board);
     const wx = weatherView(board);
     const dam = board.dam;
@@ -440,12 +438,7 @@
     root.innerHTML = `
       <div class="page"><div class="wrap">
         <header class="hdr">
-          <div class="hdr-kicker">${esc(kicker)}</div>
-          <div class="hdr-row">
-            <h1>Akira’s board</h1>
-            <div class="hdr-updated">最終更新：${esc(fmtStamp(board.updatedAt))}</div>
-          </div>
-          <div class="hdr-rule"></div>
+          <div class="hdr-updated">最終更新：${esc(fmtStamp(board.updatedAt))}</div>
         </header>
 
         <section class="card">
