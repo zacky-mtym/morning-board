@@ -327,6 +327,19 @@
       .replaceAll('"', "&quot;");
   }
 
+  function newsHtml(board) {
+    if (board.cityNewsError) {
+      return `<div class="wx-fail"><div class="wx-fail-title">取得失敗</div><div class="wx-fail-sub">次回の更新で再取得します</div></div>`;
+    }
+    const items = board.cityNews?.items || [];
+    if (!items.length) return `<div class="news-none">更新なし</div>`;
+    return `<ul class="news-list">${items
+      .map(
+        (item) => `<li><a href="${esc(item.link)}" target="_blank" rel="noopener">${esc(item.title)}</a></li>`
+      )
+      .join("")}</ul>`;
+  }
+
   function render() {
     const board = window.BOARD_DATA;
     const root = document.getElementById("app");
@@ -471,9 +484,14 @@
           ${wxHtml}
         </section>
 
+        <section class="card">
+          <h2>松山市公式HPの更新</h2>
+          ${newsHtml(board)}
+        </section>
+
         ${stocks}
 
-        <div class="foot">公開データで更新　天気: Open-Meteo　ダム: 川の防災情報　株: Yahoo Finance</div>
+        <div class="foot">公開データで更新　天気: Open-Meteo　ダム: 川の防災情報　株: Yahoo Finance　市HP: 松山市</div>
       </div></div>`;
 
     const draft = document.getElementById("todo-draft");

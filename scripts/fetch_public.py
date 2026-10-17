@@ -2,7 +2,9 @@
 import json
 import re
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta, date
+from email.utils import parsedate_to_datetime
 
 JST = timezone(timedelta(hours=9))
 UA = {"User-Agent": "MorningBoard/1.0"}
@@ -189,6 +191,82 @@ def main() -> None:
         except Exception as e:
             out["stockErrors"][sym] = str(e)
     print(json.dumps(out, ensure_ascii=False, indent=2))
+
+
+CITY_NEWS_RSS = "https://www.city.matsuyama.ehime.jp/rss_news.xml"
+CITY_NEWS_LIMIT = 30
+_ENTRY_RE = re.compile(r"^\d+\.\s+(\d{4}-\d{2}-\d{2} \d{2}:\d{2})\s+(.+?)\s*$")
+_NOTE_RE = re.compile(r"(?:【[^】]*】)+\s*$")
+
+
+def fetch_city_news(limit: int = CITY_NEWS_LIMIT) -> list:
+    """Top items from the Matsuyama city RSS. Times stay in the feed's GMT."""
+    root = ET.fromstring(get(CITY_NEWS_RSS))
+    channel = root.find("channel")
+    if channel is None:
+        raise RuntimeError("city news channel not found")
+    items = []
+    for item in channel.findall("item"):
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        pub = (item.findtext("pubDate") or "").strip()
+        if not title or not link or not pub:
+            continue
+        published = parsedate_to_datetime(pub).astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M")
+        items.append({"title": title, "link": link, "published": published})
+        if len(items) >= limit:
+            break
+    if not items:
+        raise RuntimeError("city news items not found")
+    return items
+
+
+def parse_city_news_baseline(text: str) -> list:
+    """Numbered entries in MatsuyamaHP updates.txt. Trailing 【注記】 is ignored."""
+    lines = text.splitlines()
+    items = []
+    i = 0
+    while i < len(lines):
+        match = _ENTRY_RE.match(lines[i].strip())
+        if not match:
+            i += 1
+            continue
+        title = _NOTE_RE.sub("", match.group(2)).strip()
+        link = ""
+        if i + 1 < len(lines):
+            nxt = lines[i + 1].strip()
+            if nxt.startswith("http://") or nxt.startswith("https://"):
+                link = nxt
+                i += 1
+        if link:
+            items.append({"title": title, "link": link, "published": match.group(1)})
+        i += 1
+    return items
+
+
+def diff_city_news(previous: list, current: list) -> list:
+    """Items whose URL is new, or whose GMT time or title changed."""
+    prev_by_link = {item["link"]: item for item in previous}
+    updates = []
+    for item in current:
+        old = prev_by_link.get(item["link"])
+        if old is None or old["published"] != item["published"] or old["title"] != item["title"]:
+            updates.append(item)
+    return updates
+
+
+def format_city_news_baseline(items: list, checked_on: str) -> str:
+    lines = [
+        "松山市公式HP 更新情報（RSS上位30件）",
+        f"最終確認: {checked_on}",
+        f"出典: {CITY_NEWS_RSS}",
+        "日時はRSSのGMT表記",
+        "",
+    ]
+    for i, item in enumerate(items, 1):
+        lines.append(f"{i}. {item['published']} {item['title']}")
+        lines.append(f"   {item['link']}")
+    return "\n".join(lines) + "\n"
 
 
 HOLIDAY_ICS = (

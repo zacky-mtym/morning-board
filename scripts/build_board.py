@@ -12,10 +12,24 @@ from fetch_public import (
     fetch_weather,
     fetch_chart,
     fetch_ics_events,
+    fetch_city_news,
+    parse_city_news_baseline,
+    diff_city_news,
+    format_city_news_baseline,
     summarize_weather_days,
     HOLIDAY_ICS,
     JST,
 )
+
+CITY_NEWS_BASELINE = ROOT / "MatsuyamaHP updates.txt"
+
+
+def read_baseline(path: Path) -> str:
+    raw = path.read_bytes()
+    try:
+        return raw.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        return raw.decode("cp932")
 
 
 def downsample(points, max_n):
@@ -87,6 +101,24 @@ def refresh_calendar(calendar: dict) -> dict:
     return calendar
 
 
+def refresh_city_news() -> dict:
+    """Diff the RSS top 30 against the baseline file, then replace that file.
+
+    A failed fetch leaves the baseline untouched so the next run still has a
+    comparison point.
+    """
+    current = fetch_city_news()
+    previous = []
+    if CITY_NEWS_BASELINE.exists():
+        previous = parse_city_news_baseline(read_baseline(CITY_NEWS_BASELINE))
+    updates = diff_city_news(previous, current)
+    checked_on = datetime.now(JST).date().isoformat()
+    CITY_NEWS_BASELINE.write_text(
+        format_city_news_baseline(current, checked_on), encoding="utf-8"
+    )
+    return {"items": updates}
+
+
 def main():
     calendar = json.loads((ROOT / "data" / "calendar.json").read_text(encoding="utf-8"))
     calendar = refresh_calendar(calendar)
@@ -103,6 +135,8 @@ def main():
         "damError": None,
         "stocks": [],
         "stockErrors": {},
+        "cityNews": None,
+        "cityNewsError": None,
     }
     try:
         w = fetch_weather()
@@ -120,6 +154,10 @@ def main():
         ("SPCX", "SpaceX", "ドル", 2),
         ("7011.T", "三菱重工業", "円", 0),
     ]
+    try:
+        board["cityNews"] = refresh_city_news()
+    except Exception as e:
+        board["cityNewsError"] = str(e)
     for symbol, name, cur, dec in specs:
         try:
             board["stocks"].append(stock_payload(symbol, name, cur, dec))
@@ -135,6 +173,8 @@ def main():
     print("dam", board["dam"])
     print("weatherError", board["weatherError"])
     print("stockErrors", board["stockErrors"])
+    news = board["cityNews"]
+    print("cityNews", len(news["items"]) if news else None, board["cityNewsError"])
 
 
 if __name__ == "__main__":

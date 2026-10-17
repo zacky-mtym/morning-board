@@ -216,6 +216,18 @@ a:hover { color: var(--gold-soft); }
   font: 500 20px var(--mono);
   color: var(--ink);
 }
+.news-none { font-size: 14px; color: var(--ink-soft); }
+.news-list {
+  margin: 0;
+  padding-left: 1.25em;
+}
+.news-list li {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.news-list a { text-decoration: none; }
+.news-list a:hover { text-decoration: underline; }
 .week {
   display: flex;
   gap: 8px;
