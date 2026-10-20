@@ -13,8 +13,9 @@ from fetch_public import (
     fetch_chart,
     fetch_ics_events,
     fetch_city_news,
+    fetch_page_updated,
     parse_city_news_baseline,
-    diff_city_news,
+    select_city_news_updates,
     format_city_news_baseline,
     summarize_weather_days,
     HOLIDAY_ICS,
@@ -102,19 +103,23 @@ def refresh_calendar(calendar: dict) -> dict:
 
 
 def refresh_city_news() -> dict:
-    """Diff the RSS top 30 against the baseline file, then replace that file.
+    """Compare the RSS top 30 with the saved page dates, then rewrite the file.
 
-    A failed fetch leaves the baseline untouched so the next run still has a
-    comparison point.
+    A failed RSS fetch leaves the baseline untouched. A page whose 更新日
+    cannot be read is skipped and left unseen, so the next run tries again.
     """
     current = fetch_city_news()
-    previous = []
+    seen, order, last_checked = {}, [], None
     if CITY_NEWS_BASELINE.exists():
-        previous = parse_city_news_baseline(read_baseline(CITY_NEWS_BASELINE))
-    updates = diff_city_news(previous, current)
+        seen, order, last_checked = parse_city_news_baseline(read_baseline(CITY_NEWS_BASELINE))
+    if last_checked is None:
+        last_checked = datetime.now(JST).date() - timedelta(days=1)
+    updates, seen, order = select_city_news_updates(
+        seen, order, current, last_checked, fetch_page_updated
+    )
     checked_on = datetime.now(JST).date().isoformat()
     CITY_NEWS_BASELINE.write_text(
-        format_city_news_baseline(current, checked_on), encoding="utf-8"
+        format_city_news_baseline(current, seen, order, checked_on), encoding="utf-8"
     )
     return {"items": updates}
 

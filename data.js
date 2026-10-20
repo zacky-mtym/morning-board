@@ -1031,14 +1031,16 @@ window.BOARD_DATA = {
   "cityNews": {
     "items": [
       {
-        "title": "渇水対策を中止しました",
-        "link": "http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html",
-        "published": "2026-10-19 08:00"
+        "title": "「キッズメディカルチャレンジ」の参加者を募集します",
+        "link": "http://www.city.matsuyama.ehime.jp/bosyu/kidsmedicalchallenge.html",
+        "published": "2026-10-20 05:00",
+        "pageUpdated": "2026-10-20"
       },
       {
-        "title": "第51回市民大清掃開催日の変更",
-        "link": "http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/bika/shimindaiseisou.html",
-        "published": "2026-09-27 23:30"
+        "title": "【令和8年度正規職員】技術職上級採用試験（通年）の試験結果を発表します【8月申込分】",
+        "link": "http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8tuunen8.html",
+        "published": "2026-10-20 01:00",
+        "pageUpdated": "2026-10-20"
       }
     ]
   },

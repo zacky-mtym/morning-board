@@ -334,9 +334,10 @@
     const items = board.cityNews?.items || [];
     if (!items.length) return `<div class="news-none">更新なし</div>`;
     return `<ul class="news-list">${items
-      .map(
-        (item) => `<li><a href="${esc(item.link)}" target="_blank" rel="noopener">${esc(item.title)}</a></li>`
-      )
+      .map((item) => {
+        const when = item.pageUpdated ? `<span class="news-date">更新日 ${esc(item.pageUpdated)}</span>` : "";
+        return `<li><a href="${esc(item.link)}" target="_blank" rel="noopener">${esc(item.title)}</a>${when}</li>`;
+      })
       .join("")}</ul>`;
   }
 

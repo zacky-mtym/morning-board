@@ -197,6 +197,20 @@ CITY_NEWS_RSS = "https://www.city.matsuyama.ehime.jp/rss_news.xml"
 CITY_NEWS_LIMIT = 30
 _ENTRY_RE = re.compile(r"^\d+\.\s+(\d{4}-\d{2}-\d{2} \d{2}:\d{2})\s+(.+?)\s*$")
 _NOTE_RE = re.compile(r"(?:【[^】]*】)+\s*$")
+_CHECKED_RE = re.compile(r"^最終確認:\s*(\d{4}-\d{2}-\d{2})")
+_PAGE_LINE_RE = re.compile(r"^更新日:\s*(\d{4}-\d{2}-\d{2})\s*$")
+_PAGE_HTML_RE = re.compile(
+    r'class="update">\s*更新日[：:]\s*(\d{4})年(\d{1,2})月(\d{1,2})日'
+)
+_PAGE_HTML_FALLBACK_RE = re.compile(r"更新日[：:]\s*(\d{4})年(\d{1,2})月(\d{1,2})日")
+SEEN_MARK = "【確認済み】"
+
+
+def norm_city_link(url: str) -> str:
+    url = (url or "").strip().rstrip("/")
+    if url.startswith("https://"):
+        url = "http://" + url[len("https://"):]
+    return url
 
 
 def fetch_city_news(limit: int = CITY_NEWS_LIMIT) -> list:
@@ -221,51 +235,161 @@ def fetch_city_news(limit: int = CITY_NEWS_LIMIT) -> list:
     return items
 
 
-def parse_city_news_baseline(text: str) -> list:
-    """Numbered entries in MatsuyamaHP updates.txt. Trailing 【注記】 is ignored."""
+def fetch_page_updated(url: str):
+    """The date printed on the city page as 更新日. None when it cannot be read."""
+    raw = get(url)
+    encoding = "utf-8"
+    declared = re.search(br"charset=([\w-]+)", raw[:2500], re.I)
+    if declared:
+        encoding = declared.group(1).decode("ascii", errors="ignore") or "utf-8"
+    html = raw.decode(encoding, errors="replace")
+    match = _PAGE_HTML_RE.search(html) or _PAGE_HTML_FALLBACK_RE.search(html)
+    if not match:
+        return None
+    year, month, day = (int(match.group(i)) for i in (1, 2, 3))
+    return date(year, month, day)
+
+
+def parse_city_news_baseline(text: str):
+    """Return (seen_in_order, last_checked).
+
+    seen values keep every URL the board has already observed. The numbered
+    list is only the latest RSS top 30 and is merged in when the seen section
+    is still empty.
+    """
     lines = text.splitlines()
-    items = []
+    last_checked = None
+    seen = {}
+    order = []
+    in_seen = False
     i = 0
     while i < len(lines):
-        match = _ENTRY_RE.match(lines[i].strip())
+        raw_line = lines[i]
+        line = raw_line.strip()
+        checked = _CHECKED_RE.match(line)
+        if checked:
+            last_checked = date.fromisoformat(checked.group(1))
+        if line.startswith(SEEN_MARK):
+            in_seen = True
+            i += 1
+            continue
+        if in_seen:
+            if "\t" in line and (line.startswith("http://") or line.startswith("https://")):
+                url, page_updated, published, title = (line.split("\t", 3) + ["", "", ""])[:4]
+                key = norm_city_link(url)
+                if key and key not in seen:
+                    order.append(key)
+                if key:
+                    seen[key] = {
+                        "title": title.strip(),
+                        "link": url.strip(),
+                        "published": published.strip(),
+                        "pageUpdated": page_updated.strip(),
+                    }
+            i += 1
+            continue
+        match = _ENTRY_RE.match(line)
         if not match:
             i += 1
             continue
         title = _NOTE_RE.sub("", match.group(2)).strip()
         link = ""
+        page_updated = ""
         if i + 1 < len(lines):
             nxt = lines[i + 1].strip()
             if nxt.startswith("http://") or nxt.startswith("https://"):
                 link = nxt
                 i += 1
+                if i + 1 < len(lines):
+                    page_match = _PAGE_LINE_RE.match(lines[i + 1].strip())
+                    if page_match:
+                        page_updated = page_match.group(1)
+                        i += 1
         if link:
-            items.append({"title": title, "link": link, "published": match.group(1)})
+            key = norm_city_link(link)
+            if key not in seen:
+                order.append(key)
+                seen[key] = {
+                    "title": title,
+                    "link": link,
+                    "published": match.group(1),
+                    "pageUpdated": page_updated,
+                }
         i += 1
-    return items
+    return seen, order, last_checked
 
 
-def diff_city_news(previous: list, current: list) -> list:
-    """Items whose URL is new, or whose GMT time or title changed."""
-    prev_by_link = {item["link"]: item for item in previous}
+def select_city_news_updates(seen: dict, order: list, current: list, last_checked: date, page_updated_of):
+    """Updates are pages whose 更新日 is new since the previous check.
+
+    RSS republication is not an update. A URL that leaves the top 30 and
+    later returns is not an update when its page date is unchanged. The seen
+    map only grows.
+    """
+    seen = {norm_city_link(key): dict(value) for key, value in seen.items()}
+    order = [norm_city_link(key) for key in order if norm_city_link(key) in seen]
     updates = []
     for item in current:
-        old = prev_by_link.get(item["link"])
-        if old is None or old["published"] != item["published"] or old["title"] != item["title"]:
-            updates.append(item)
-    return updates
+        key = norm_city_link(item["link"])
+        prev = seen.get(key)
+        if (
+            prev
+            and prev.get("published") == item["published"]
+            and prev.get("title") == item["title"]
+        ):
+            continue
+        page_updated = page_updated_of(item["link"])
+        if page_updated is None:
+            continue
+        prev_page = None
+        if prev and prev.get("pageUpdated"):
+            prev_page = date.fromisoformat(prev["pageUpdated"])
+        record = {
+            "title": item["title"],
+            "link": item["link"],
+            "published": item["published"],
+            "pageUpdated": page_updated.isoformat(),
+        }
+        if key not in seen:
+            order.append(key)
+        seen[key] = record
+        if page_updated < last_checked:
+            continue
+        if prev_page is not None and page_updated <= prev_page:
+            continue
+        updates.append(dict(record))
+    return updates, seen, order
 
 
-def format_city_news_baseline(items: list, checked_on: str) -> str:
+def format_city_news_baseline(current: list, seen: dict, order: list, checked_on: str) -> str:
     lines = [
         "松山市公式HP 更新情報（RSS上位30件）",
         f"最終確認: {checked_on}",
         f"出典: {CITY_NEWS_RSS}",
         "日時はRSSのGMT表記",
+        "掲載条件: ページの「更新日」が前回の最終確認日以降で、確認済みより新しいものだけ。RSSの再掲や順位の変化では出さない。",
         "",
     ]
-    for i, item in enumerate(items, 1):
+    for i, item in enumerate(current, 1):
         lines.append(f"{i}. {item['published']} {item['title']}")
         lines.append(f"   {item['link']}")
+        page_updated = seen.get(norm_city_link(item["link"]), {}).get("pageUpdated")
+        if page_updated:
+            lines.append(f"   更新日: {page_updated}")
+    lines.append("")
+    lines.append(f"{SEEN_MARK} URL、ページの更新日、RSSのGMT、見出し。消さない。")
+    for key in order:
+        item = seen.get(key)
+        if not item:
+            continue
+        lines.append(
+            "\t".join([
+                item["link"],
+                item.get("pageUpdated") or "",
+                item.get("published") or "",
+                item.get("title") or "",
+            ])
+        )
     return "\n".join(lines) + "\n"
 
 
