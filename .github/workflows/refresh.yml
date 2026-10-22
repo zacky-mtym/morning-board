@@ -2,8 +2,12 @@ name: Refresh morning board
 
 on:
   schedule:
-    # 00:00 JST = 15:00 UTC
+    # 00:00 JST. GitHub often starts this a few hours later.
     - cron: "0 15 * * *"
+    # 12:00 JST. The city site posts during the morning, after the first run.
+    - cron: "0 3 * * *"
+    # 17:00 JST. Picks up notices published in the afternoon.
+    - cron: "0 8 * * *"
   workflow_dispatch:
 
 permissions:
