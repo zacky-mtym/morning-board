@@ -1,5 +1,5 @@
 松山市公式HP 更新情報（RSS上位30件）
-最終確認: 2026-10-22
+最終確認: 2026-10-23
 出典: https://www.city.matsuyama.ehime.jp/rss_news.xml
 日時はRSSのGMT表記
 掲載条件: ページの「更新日」が前回の最終確認日以降で、確認済みより新しいものだけ。RSSの再掲や順位の変化では出さない。
@@ -104,7 +104,6 @@ http://www.city.matsuyama.ehime.jp/bosyu/kidsmedicalchallenge.html	2026-10-20	20
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8tuunen8.html	2026-10-20	2026-10-20 01:00	【令和8年度正規職員】技術職上級採用試験（通年）の試験結果を発表します【8月申込分】
 http://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/mynumberseido/center-oyasumi.html	2026-10-19	2026-10-18 15:00	令和8年（2026年）11月22日（日曜日）は松山市マイナンバーカードセンターの休業日です
 http://www.city.matsuyama.ehime.jp/shisei/senkyo/senkyochiji/r8chijisityo_annnai.html	2026-10-16	2026-10-16 06:30	愛媛県知事選挙及び松山市長選挙のご案内
-http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026-10-16 06:30	【募集期間延長】Velo-city2027Ehime開催記念　第12回『坂の上の雲』のまち松山 サイクルロゲイニング大会の参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/shiminkatsudo/bunka/yorunomachinakajazz.html	2026-10-16	2026-10-16 05:00	松山市駅前広場「金曜夜のまちなかジャズ」の開催
 http://www.city.matsuyama.ehime.jp/kurashi/bosai/bousai/all/syusyuhouhou/20261015.html	2026-10-15	2026-10-15 09:00	緊急停止していた防災情報配信サービスが復旧しました
 http://www.city.matsuyama.ehime.jp/shisetsu/bunka/library/ivent/interiorbinder.html	2026-10-15	2026-10-15 00:30	おとなのインテリアパネル教室～壁紙で作るインテリアパネル～を開催します
@@ -127,6 +126,7 @@ http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/sonota/r4higasihabun
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/zukuri/gantaisaku/breastawareness.html	2026-10-01	2026-09-30 15:00	10月は、ピンクリボン運動の推進月間です
 http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/R8kutunaair.html	2026-10-01	2026-09-30 15:00	忽那諸島アーティスト・イン・レジデンス実施業務委託（公募型プロポーザル方式）を実施（募集）します
 http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/hokatsuevent/202610_gyoujiyotei.html	2026-09-29	2026-09-29 07:00	令和8年（2026年）10月の地域包括支援センター行事予定を掲載しました
+http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026-10-16 06:30	【募集期間延長】Velo-city2027Ehime開催記念　第12回『坂の上の雲』のまち松山 サイクルロゲイニング大会の参加者を募集します
 http://www.city.matsuyama.ehime.jp/bosyu/ninti20191111.html	2026-09-28	2026-09-28 04:00	認知症サポーター養成講座を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kosodate/gakkokyoiku/ijimejyudaijian.html	2026-09-28	2026-09-28 04:00	松山市立小学校いじめ重大事態調査報告書を公表します
 http://www.city.matsuyama.ehime.jp/bosyu/ikicharekyositu.html	2026-09-28	2026-09-28 02:00	令和8年度「いきいきチャレンジ健康アプリ・スマホ教室」の参加者を募集します
