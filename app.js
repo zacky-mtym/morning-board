@@ -245,7 +245,7 @@
   function daysFor(board) {
     const start = todayJst();
     const cals = Object.fromEntries(board.calendar.calendars.map((c) => [c.id, c]));
-    return [0, 1, 2, 3, 4, 5, 6].map((i) => {
+    return [0, 1, 2].map((i) => {
       const dt = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
       const key = ymd(dt);
       const events = board.calendar.events
@@ -456,7 +456,7 @@
         </header>
 
         <section class="card">
-          <h2 class="tight">Next 7 Days</h2>
+          <h2 class="tight">Next 3 Days</h2>
           <div class="legend">${legend}</div>
           ${dayHtml}
         </section>
