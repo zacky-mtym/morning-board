@@ -96,6 +96,7 @@
    更新日: 2026-10-01
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
+http://www.city.matsuyama.ehime.jp/kanko/event/bunka/spocity2026tyushi.html	2026-10-24	2026-10-24 05:00	第72回松山市民体育祭2026と松山市スポーツ推進委員表彰式を中止します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/tetuzuki/info/touketutaisaku.html	2026-10-23	2026-10-23 07:00	水道管の凍結対策についてお知らせします
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kansensho/tyuui/r8mashin.html	2026-10-23	2026-10-23 07:00	麻しん（はしか）患者の発生についてお知らせします
 http://www.city.matsuyama.ehime.jp/shisei/machizukuri/kotoba/siawasesakuhin.html	2026-10-23	2026-10-23 04:30	あなたの「幸せになろう。」メッセージ募集の受賞作品を決定しました
@@ -138,4 +139,3 @@ http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/bika/shimindaiseisou.html	2026-09-28	2026-09-27 23:30	第51回市民大清掃開催日の変更
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
-http://www.city.matsuyama.ehime.jp/kanko/event/bunka/spocity2026tyushi.html	2026-10-24	2026-10-24 05:00	第72回松山市民体育祭2026と松山市スポーツ推進委員表彰式を中止します
