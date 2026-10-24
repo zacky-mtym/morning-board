@@ -16,6 +16,7 @@ from fetch_public import (
     fetch_page_updated,
     parse_city_news_baseline,
     select_city_news_updates,
+    city_news_for_board,
     format_city_news_baseline,
     summarize_weather_days,
     HOLIDAY_ICS,
@@ -107,6 +108,8 @@ def refresh_city_news() -> dict:
 
     A failed RSS fetch leaves the baseline untouched. A page whose 更新日
     cannot be read is skipped and left unseen, so the next run tries again.
+    The board keeps notices dated today or yesterday, so a later run the
+    same day does not clear an afternoon notice before the next morning.
     """
     current = fetch_city_news()
     seen, order, last_checked = {}, [], None
@@ -114,14 +117,14 @@ def refresh_city_news() -> dict:
         seen, order, last_checked = parse_city_news_baseline(read_baseline(CITY_NEWS_BASELINE))
     if last_checked is None:
         last_checked = datetime.now(JST).date() - timedelta(days=1)
-    updates, seen, order = select_city_news_updates(
+    _, seen, order = select_city_news_updates(
         seen, order, current, last_checked, fetch_page_updated
     )
-    checked_on = datetime.now(JST).date().isoformat()
+    today = datetime.now(JST).date()
     CITY_NEWS_BASELINE.write_text(
-        format_city_news_baseline(current, seen, order, checked_on), encoding="utf-8"
+        format_city_news_baseline(current, seen, order, today.isoformat()), encoding="utf-8"
     )
-    return {"items": updates}
+    return {"items": city_news_for_board(current, seen, today)}
 
 
 def main():

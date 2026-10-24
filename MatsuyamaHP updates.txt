@@ -2,7 +2,7 @@
 最終確認: 2026-10-25
 出典: https://www.city.matsuyama.ehime.jp/rss_news.xml
 日時はRSSのGMT表記
-掲載条件: ページの「更新日」が前回の最終確認日以降で、確認済みより新しいものだけ。RSSの再掲や順位の変化では出さない。
+掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。
 
 1. 2026-10-24 05:00 第72回松山市民体育祭2026と松山市スポーツ推進委員表彰式を中止します
    http://www.city.matsuyama.ehime.jp/kanko/event/bunka/spocity2026tyushi.html

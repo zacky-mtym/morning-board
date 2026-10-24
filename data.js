@@ -1,5 +1,5 @@
 window.BOARD_DATA = {
-  "updatedAt": "2026-10-25T02:43+09:00",
+  "updatedAt": "2026-10-25T07:08+09:00",
   "city": "松山市",
   "calendar": {
     "calendars": [
@@ -1177,7 +1177,14 @@ window.BOARD_DATA = {
   ],
   "stockErrors": {},
   "cityNews": {
-    "items": []
+    "items": [
+      {
+        "title": "第72回松山市民体育祭2026と松山市スポーツ推進委員表彰式を中止します",
+        "link": "http://www.city.matsuyama.ehime.jp/kanko/event/bunka/spocity2026tyushi.html",
+        "published": "2026-10-24 05:00",
+        "pageUpdated": "2026-10-24"
+      }
+    ]
   },
   "cityNewsError": null
 };

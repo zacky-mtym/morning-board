@@ -361,13 +361,40 @@ def select_city_news_updates(seen: dict, order: list, current: list, last_checke
     return updates, seen, order
 
 
+def city_news_for_board(current: list, seen: dict, today: date) -> list:
+    """Notices whose 更新日 is today or yesterday.
+
+    A run later the same day used to replace the board with only what was
+    new since that run, so an afternoon notice was gone by the next morning.
+    Keep today and yesterday visible. Older pages, including RSS
+    republications, stay off the board.
+    """
+    cutoff = today - timedelta(days=1)
+    visible = []
+    for item in current:
+        rec = seen.get(norm_city_link(item["link"])) or {}
+        raw = (rec.get("pageUpdated") or "").strip()
+        if not raw:
+            continue
+        page_updated = date.fromisoformat(raw)
+        if page_updated < cutoff:
+            continue
+        visible.append({
+            "title": item["title"],
+            "link": item["link"],
+            "published": item["published"],
+            "pageUpdated": page_updated.isoformat(),
+        })
+    return visible
+
+
 def format_city_news_baseline(current: list, seen: dict, order: list, checked_on: str) -> str:
     lines = [
         "松山市公式HP 更新情報（RSS上位30件）",
         f"最終確認: {checked_on}",
         f"出典: {CITY_NEWS_RSS}",
         "日時はRSSのGMT表記",
-        "掲載条件: ページの「更新日」が前回の最終確認日以降で、確認済みより新しいものだけ。RSSの再掲や順位の変化では出さない。",
+        "掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。",
         "",
     ]
     for i, item in enumerate(current, 1):
