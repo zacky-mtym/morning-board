@@ -4,7 +4,7 @@
 日時はRSSのGMT表記
 掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。
 
-1. 2026-10-26 04:00 松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
+1. 2026-10-26 09:00 松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
    http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/sousenR8puropo.html
    更新日: 2026-10-26
 2. 2026-10-26 03:00 おとなのインテリアパネル教室～壁紙で作るインテリアパネル～を開催します
@@ -96,11 +96,10 @@
    更新日: 2026-09-29
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
+http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/sousenR8puropo.html	2026-10-26	2026-10-26 09:00	松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
+http://www.city.matsuyama.ehime.jp/shisetsu/bunka/library/ivent/interiorbinder.html	2026-10-26	2026-10-26 03:00	おとなのインテリアパネル教室～壁紙で作るインテリアパネル～を開催します
 http://www.city.matsuyama.ehime.jp/kanko/event/bunka/spocity2026tyushi.html	2026-10-24	2026-10-24 05:00	第72回松山市民体育祭2026と松山市スポーツ推進委員表彰式を中止します
-http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/tetuzuki/info/touketutaisaku.html	2026-10-23	2026-10-23 07:00	水道管の凍結対策についてお知らせします
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kansensho/tyuui/r8mashin.html	2026-10-23	2026-10-23 07:00	麻しん（はしか）患者の発生についてお知らせします
-http://www.city.matsuyama.ehime.jp/shisei/machizukuri/kotoba/siawasesakuhin.html	2026-10-23	2026-10-23 04:30	あなたの「幸せになろう。」メッセージ募集の受賞作品を決定しました
-http://www.city.matsuyama.ehime.jp/shisei/shiminkatsudo/bunka/yorunomachinakajazz.html	2026-10-23	2026-10-23 01:30	10月23日（金曜日）の松山市駅前広場「金曜夜のまちなかジャズ」の開催を中止ます
 http://www.city.matsuyama.ehime.jp/shisei/machizukuri/matsuyamaeki/machidukuri/ekimachi-project.html	2026-10-22	2026-10-22 04:00	JR松山駅周辺で「つなぐ駅まち ひだまり木工市」を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/hojokin/akiyajokyaku.html	2026-10-22	2026-10-22 04:00	令和8年度（2026年度）老朽危険空家除却事業補助金の第3期受付を開始します
 http://www.city.matsuyama.ehime.jp/aboutweb/riyouseigen.html	2026-10-22	2026-10-22 03:30	市公式ホームページ等の利用を一部制限します
@@ -110,7 +109,6 @@ http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8tuunen8
 http://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/mynumberseido/center-oyasumi.html	2026-10-19	2026-10-18 15:00	令和8年（2026年）11月22日（日曜日）は松山市マイナンバーカードセンターの休業日です
 http://www.city.matsuyama.ehime.jp/shisei/senkyo/senkyochiji/r8chijisityo_annnai.html	2026-10-16	2026-10-16 06:30	愛媛県知事選挙及び松山市長選挙のご案内
 http://www.city.matsuyama.ehime.jp/kurashi/bosai/bousai/all/syusyuhouhou/20261015.html	2026-10-15	2026-10-15 09:00	緊急停止していた防災情報配信サービスが復旧しました
-http://www.city.matsuyama.ehime.jp/shisetsu/bunka/library/ivent/interiorbinder.html	2026-10-26	2026-10-26 03:00	おとなのインテリアパネル教室～壁紙で作るインテリアパネル～を開催します
 http://www.city.matsuyama.ehime.jp/shisei/tokei/toukei.html	2026-10-15	2026-10-14 15:00	令和8年10月1日現在の松山市の人口を掲載しました
 http://www.city.matsuyama.ehime.jp/kanko/kankoguide/matsurievent/matsuyama_sacramento.html	2026-10-14	2026-10-13 15:00	松山・サクラメント姉妹都市提携45周年記念写真展を開催します。
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8sbshokyu1.html	2026-10-09	2026-10-09 01:00	令和8年度松山市消防職員（初級）採用試験の第1次試験合格者を発表します
@@ -127,10 +125,13 @@ http://www.city.matsuyama.ehime.jp/kanko/event/sonota/2026pointokyanpe-n.html	20
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/sonota/r4higasihabunouen.html	2026-10-01	2026-10-01 04:30	松山市東垣生市民農園の利用を募集します
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/zukuri/gantaisaku/breastawareness.html	2026-10-01	2026-09-30 15:00	10月は、ピンクリボン運動の推進月間です
 http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/R8kutunaair.html	2026-10-01	2026-09-30 15:00	忽那諸島アーティスト・イン・レジデンス実施業務委託（公募型プロポーザル方式）を実施（募集）します
+http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/hokatsuevent/202610_gyoujiyotei.html	2026-09-29	2026-09-29 07:00	令和8年（2026年）10月の地域包括支援センター行事予定を掲載しました
+http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/tetuzuki/info/touketutaisaku.html	2026-10-23	2026-10-23 07:00	水道管の凍結対策についてお知らせします
+http://www.city.matsuyama.ehime.jp/shisei/machizukuri/kotoba/siawasesakuhin.html	2026-10-23	2026-10-23 04:30	あなたの「幸せになろう。」メッセージ募集の受賞作品を決定しました
+http://www.city.matsuyama.ehime.jp/shisei/shiminkatsudo/bunka/yorunomachinakajazz.html	2026-10-23	2026-10-23 01:30	10月23日（金曜日）の松山市駅前広場「金曜夜のまちなかジャズ」の開催を中止ます
 http://www.city.matsuyama.ehime.jp/kurashi/fukushi/korei/hojin/kensetsuseibi/koubokekka.html	2023-02-24	2026-10-23 02:00	令和4年度介護付有料老人ホームの施設整備に係る公募結果を公表します
 http://www.city.matsuyama.ehime.jp/kanko/event/sonota/37asaichi.html	2026-10-01	2026-10-01 07:30	第37回三津の朝市「旬・鮮・味まつり」を開催します
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sonohoka/R8-12kosodate.html	2026-10-09	2026-10-09 03:00	母子生活支援施設宿直職員（一般）（フルタイム／令和8年度会計年度任用職員）を募集します（子育て支援課）
-http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/hokatsuevent/202610_gyoujiyotei.html	2026-09-29	2026-09-29 07:00	令和8年（2026年）10月の地域包括支援センター行事予定を掲載しました
 http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026-10-16 06:30	【募集期間延長】Velo-city2027Ehime開催記念　第12回『坂の上の雲』のまち松山 サイクルロゲイニング大会の参加者を募集します
 http://www.city.matsuyama.ehime.jp/bosyu/ninti20191111.html	2026-09-28	2026-09-28 04:00	認知症サポーター養成講座を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kosodate/gakkokyoiku/ijimejyudaijian.html	2026-09-28	2026-09-28 04:00	松山市立小学校いじめ重大事態調査報告書を公表します
@@ -139,4 +140,3 @@ http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/bika/shimindaiseisou.html	2026-09-28	2026-09-27 23:30	第51回市民大清掃開催日の変更
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
-http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/sousenR8puropo.html	2026-10-26	2026-10-26 04:00	松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
