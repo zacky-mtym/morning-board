@@ -108,7 +108,6 @@ http://www.city.matsuyama.ehime.jp/kurashi/kurashi/hojokin/akiyajokyaku.html	202
 http://www.city.matsuyama.ehime.jp/bosyu/siyuchibaikyaku_r8_2.html	2026-10-22	2026-10-22 00:00	インターネット公有財産売却（市有地）を実施します
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8tuunen8.html	2026-10-20	2026-10-20 01:00	【令和8年度正規職員】技術職上級採用試験（通年）の試験結果を発表します【8月申込分】
 http://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/mynumberseido/center-oyasumi.html	2026-10-19	2026-10-18 15:00	令和8年（2026年）11月22日（日曜日）は松山市マイナンバーカードセンターの休業日です
-http://www.city.matsuyama.ehime.jp/shisei/senkyo/senkyochiji/r8chijisityo_annnai.html	2026-10-16	2026-10-16 06:30	愛媛県知事選挙及び松山市長選挙のご案内
 http://www.city.matsuyama.ehime.jp/kurashi/bosai/bousai/all/syusyuhouhou/20261015.html	2026-10-15	2026-10-15 09:00	緊急停止していた防災情報配信サービスが復旧しました
 http://www.city.matsuyama.ehime.jp/kanko/kankoguide/matsurievent/matsuyama_sacramento.html	2026-10-14	2026-10-13 15:00	松山・サクラメント姉妹都市提携45周年記念写真展を開催します。
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8sbshokyu1.html	2026-10-09	2026-10-09 01:00	令和8年度松山市消防職員（初級）採用試験の第1次試験合格者を発表します
@@ -126,6 +125,8 @@ http://www.city.matsuyama.ehime.jp/bosyu/ninti20191111.html	2026-09-28	2026-09-2
 http://www.city.matsuyama.ehime.jp/kurashi/kosodate/gakkokyoiku/ijimejyudaijian.html	2026-09-28	2026-09-28 04:00	松山市立小学校いじめ重大事態調査報告書を公表します
 http://www.city.matsuyama.ehime.jp/bosyu/ikicharekyositu.html	2026-09-28	2026-09-28 02:00	令和8年度「いきいきチャレンジ健康アプリ・スマホ教室」の参加者を募集します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/bika/shimindaiseisou.html	2026-09-28	2026-09-27 23:30	第51回市民大清掃開催日の変更
+http://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kokoro/mentalhealthday.html	2026-09-23	2026-09-23 01:30	10月10日は世界メンタルヘルスデーです
+http://www.city.matsuyama.ehime.jp/shisei/senkyo/senkyochiji/r8chijisityo_annnai.html	2026-10-16	2026-10-16 06:30	愛媛県知事選挙及び松山市長選挙のご案内
 http://www.city.matsuyama.ehime.jp/bosyu/kokoku/shizeikoukoku2027.html	2026-09-25	2026-09-25 00:00	市県民税納税通知書用封筒に掲載する広告を募集します
 http://www.city.matsuyama.ehime.jp/bosyu/202501heim.html	2026-10-07	2026-10-07 01:30	ハイムインゼルごごしまの入居者を募集します
 http://www.city.matsuyama.ehime.jp/bosyu/kidsmedicalchallenge.html	2026-10-20	2026-10-20 05:00	「キッズメディカルチャレンジ」の参加者を募集します
@@ -147,4 +148,3 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
-http://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kokoro/mentalhealthday.html	2026-09-23	2026-09-23 01:30	10月10日は世界メンタルヘルスデーです
