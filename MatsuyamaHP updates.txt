@@ -96,6 +96,7 @@
    更新日: 2026-09-17
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
+http://www.city.matsuyama.ehime.jp/bosyu/konamon2027.html	2026-11-01	2026-11-01 00:00	「ご当地こなもんサミット2027in松山」の出店者を募集します
 http://www.city.matsuyama.ehime.jp/bosyu/naibujimuikensyousei.html	2026-10-30	2026-10-30 15:00	松山市内部事務システム再構築及び電子決裁基盤調達仕様書案に係る意見招請を実施します
 http://www.city.matsuyama.ehime.jp/shisetsu/bunka/simin/siminnkaikandaitaisi.html	2026-10-30	2026-10-30 04:00	松山市内や近隣市町の文化施設情報について
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seibi/anzen/fumikiri.html	2026-10-30	2026-10-30 02:30	11月1日からの10日間は「踏切事故防止キャンペーン」期間です
@@ -150,4 +151,3 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
-http://www.city.matsuyama.ehime.jp/bosyu/konamon2027.html	2026-11-01	2026-11-01 00:00	「ご当地こなもんサミット2027in松山」の出店者を募集します
