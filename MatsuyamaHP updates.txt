@@ -1,5 +1,5 @@
 松山市公式HP 更新情報（RSS上位30件）
-最終確認: 2026-11-02
+最終確認: 2026-11-03
 出典: https://www.city.matsuyama.ehime.jp/rss_news.xml
 日時はRSSのGMT表記
 掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。
@@ -96,8 +96,10 @@
    更新日: 2026-09-23
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
+http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sbgyoji/8harukasaiyobou.html	2026-11-02	2026-11-02 09:00	令和8年秋季火災予防運動を実施します
+http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/hokatsuevent/202611_gyoujiyotei.html	2026-11-02	2026-11-02 08:30	令和8年（2026年）11月の地域包括支援センター行事予定を掲載しました
+http://www.city.matsuyama.ehime.jp/shisei/kakukaichiran/siminbu/siminka.html	2026-11-02	2026-11-02 03:00	システム障害から復旧し、市民課の全ての窓口業務を再開しました
 http://www.city.matsuyama.ehime.jp/bosyu/konamon2027.html	2026-11-01	2026-11-01 00:00	「ご当地こなもんサミット2027in松山」の出店者を募集します
-http://www.city.matsuyama.ehime.jp/bosyu/naibujimuikensyousei.html	2026-10-30	2026-10-30 15:00	松山市内部事務システム再構築及び電子決裁基盤調達仕様書案に係る意見招請を実施します
 http://www.city.matsuyama.ehime.jp/shisetsu/bunka/simin/siminnkaikandaitaisi.html	2026-10-30	2026-10-30 04:00	松山市内や近隣市町の文化施設情報について
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seibi/anzen/fumikiri.html	2026-10-30	2026-10-30 02:30	11月1日からの10日間は「踏切事故防止キャンペーン」期間です
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/ninkituki/goukaku/R81013hokenshikekka.html	2026-10-27	2026-10-27 01:00	保健師（任期付職員／育児休業職員の代替職員）採用試験（令和8年(2026年)10月13日実施）の合格者を発表します
@@ -119,12 +121,13 @@ http://www.city.matsuyama.ehime.jp/shisei/shiminkatsudo/sports/toraiasurontaikai
 http://www.city.matsuyama.ehime.jp/bosyu/wagaya.html	2026-10-02	2026-10-02 00:30	令和8年度(2026年度) わが家のリフォーム応援事業（補欠のうち申請可能な方）の本申請受付を行います。
 http://www.city.matsuyama.ehime.jp/kanko/event/sonota/2026pointokyanpe-n.html	2026-08-26	2026-10-01 06:30	「2026中央市場大感謝キャンペーン」を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/sonota/r4higasihabunouen.html	2026-10-01	2026-10-01 04:30	松山市東垣生市民農園の利用を募集します
-http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/hokatsuevent/202610_gyoujiyotei.html	2026-09-29	2026-09-29 07:00	令和8年（2026年）10月の地域包括支援センター行事予定を掲載しました
 http://www.city.matsuyama.ehime.jp/bosyu/ninti20191111.html	2026-09-28	2026-09-28 04:00	認知症サポーター養成講座を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kosodate/gakkokyoiku/ijimejyudaijian.html	2026-09-28	2026-09-28 04:00	松山市立小学校いじめ重大事態調査報告書を公表します
 http://www.city.matsuyama.ehime.jp/bosyu/ikicharekyositu.html	2026-09-28	2026-09-28 02:00	令和8年度「いきいきチャレンジ健康アプリ・スマホ教室」の参加者を募集します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/bika/shimindaiseisou.html	2026-09-28	2026-09-27 23:30	第51回市民大清掃開催日の変更
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kokoro/mentalhealthday.html	2026-09-23	2026-09-23 01:30	10月10日は世界メンタルヘルスデーです
+http://www.city.matsuyama.ehime.jp/bosyu/naibujimuikensyousei.html	2026-10-30	2026-10-30 15:00	松山市内部事務システム再構築及び電子決裁基盤調達仕様書案に係る意見招請を実施します
+http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/hokatsuevent/202610_gyoujiyotei.html	2026-09-29	2026-09-29 07:00	令和8年（2026年）10月の地域包括支援センター行事予定を掲載しました
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/bika/bika_dog.html	2026-09-17	2026-09-17 00:00	まち美化サポート犬をご紹介します
 http://www.city.matsuyama.ehime.jp/shisetsu/bunka/library/idotosho/idoutoshojunkaiR0810.html	2026-09-17	2026-09-17 00:00	移動図書館巡回日程表（令和8年10月～令和9年3月）
 http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/shikaku/nyusatusankasikaku/R9R10sinsei.html	2026-10-29	2026-10-29 04:30	【間もなく受付終了】令和9・10年度（2027・2028年度）　松山市競争入札参加者資格審査申請書の受付をします
@@ -151,6 +154,3 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
-http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sbgyoji/8harukasaiyobou.html	2026-11-02	2026-11-02 09:00	令和8年秋季火災予防運動を実施します
-http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/hokatsuevent/202611_gyoujiyotei.html	2026-11-02	2026-11-02 08:30	令和8年（2026年）11月の地域包括支援センター行事予定を掲載しました
-http://www.city.matsuyama.ehime.jp/shisei/kakukaichiran/siminbu/siminka.html	2026-11-02	2026-11-02 03:00	システム障害から復旧し、市民課の全ての窓口業務を再開しました
