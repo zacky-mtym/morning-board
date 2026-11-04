@@ -96,6 +96,9 @@
    更新日: 2026-09-28
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
+http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sboshirase/fesuta.html	2026-11-05	2026-11-04 15:00	「みんなの消防フェスタ・防災シンポジウム2026」を開催します
+http://www.city.matsuyama.ehime.jp/bosyu/mitsunowa-acd.html	2026-11-04	2026-11-04 07:00	三津浜地区シェアショップ「みつのわA・B・D区画」の出店者を募集します
+http://www.city.matsuyama.ehime.jp/bosyu/kokoku/r9saiji.html	2026-11-04	2026-11-04 05:30	松山市庁舎本館及び別館内で広告付き催事案内板設置事業を行う広告代理店を募集します
 http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sbgyoji/8harukasaiyobou.html	2026-11-02	2026-11-02 09:00	令和8年秋季火災予防運動を実施します
 http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/hokatsuevent/202611_gyoujiyotei.html	2026-11-02	2026-11-02 08:30	令和8年（2026年）11月の地域包括支援センター行事予定を掲載しました
 http://www.city.matsuyama.ehime.jp/shisei/kakukaichiran/siminbu/siminka.html	2026-11-02	2026-11-02 03:00	システム障害から復旧し、市民課の全ての窓口業務を再開しました
@@ -154,6 +157,3 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
-http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sboshirase/fesuta.html	2026-11-05	2026-11-04 15:00	「みんなの消防フェスタ・防災シンポジウム2026」を開催します
-http://www.city.matsuyama.ehime.jp/bosyu/mitsunowa-acd.html	2026-11-04	2026-11-04 07:00	三津浜地区シェアショップ「みつのわA・B・D区画」の出店者を募集します
-http://www.city.matsuyama.ehime.jp/bosyu/kokoku/r9saiji.html	2026-11-04	2026-11-04 05:30	松山市庁舎本館及び別館内で広告付き催事案内板設置事業を行う広告代理店を募集します
