@@ -96,6 +96,7 @@
    更新日: 2026-10-02
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
+http://www.city.matsuyama.ehime.jp/kurashi/iryo/bosikenko/hattaukouennkai.html	2026-11-10	2026-11-09 15:00	第2回　こどもの発達に心配のある保護者のための講演会の開催します
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/jimu/R8-12jimmsai.html	2026-11-09	2026-11-08 15:00	事務補助職員（フルタイム／会計年度任用職員）（松山市斎場）を募集します（生活衛生課）
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8sbshokyu2.html	2026-11-06	2026-11-06 05:30	令和8年度松山市消防職員（初級）採用試験の第2次試験合格者を発表します
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8shokyu2.html	2026-11-06	2026-11-06 04:00	【令和8年度正規職員】事務職初級・初級土木・管理栄養士・作業員・給食調理員・事務職（障がい者）・事務職（就職氷河期世代）・事務職（実務経験者）・事務職（情報処理・実務経験者）の第2次試験合格者と実務経験者（社会福祉士・土木・機械・保育士）の第1次試験合格者を発表します
@@ -161,4 +162,3 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
-http://www.city.matsuyama.ehime.jp/kurashi/iryo/bosikenko/hattaukouennkai.html	2026-11-10	2026-11-09 15:00	第2回　こどもの発達に心配のある保護者のための講演会の開催します
