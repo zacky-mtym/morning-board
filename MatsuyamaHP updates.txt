@@ -111,7 +111,6 @@ http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_cente
 http://www.city.matsuyama.ehime.jp/shisei/kakukaichiran/siminbu/siminka.html	2026-11-02	2026-11-02 03:00	システム障害から復旧し、市民課の全ての窓口業務を再開しました
 http://www.city.matsuyama.ehime.jp/bosyu/konamon2027.html	2026-11-01	2026-11-01 00:00	「ご当地こなもんサミット2027in松山」の出店者を募集します
 http://www.city.matsuyama.ehime.jp/shisetsu/bunka/simin/siminnkaikandaitaisi.html	2026-10-30	2026-10-30 04:00	松山市内や近隣市町の文化施設情報について
-http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seibi/anzen/fumikiri.html	2026-10-30	2026-10-30 02:30	11月1日からの10日間は「踏切事故防止キャンペーン」期間です
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/ninkituki/goukaku/R81013hokenshikekka.html	2026-10-27	2026-10-27 01:00	保健師（任期付職員／育児休業職員の代替職員）採用試験（令和8年(2026年)10月13日実施）の合格者を発表します
 http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/sousenR8puropo.html	2026-10-26	2026-10-26 09:00	松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
 http://www.city.matsuyama.ehime.jp/kanko/event/bunka/spocity2026tyushi.html	2026-10-24	2026-10-24 05:00	第72回松山市民体育祭2026と松山市スポーツ推進委員表彰式を中止します
@@ -127,6 +126,7 @@ http://www.city.matsuyama.ehime.jp/kurashi/kurashi/jutaku/akiya/10goudou-soudank
 http://www.city.matsuyama.ehime.jp/shisei/machizukuri/kankyoumodel/kankyo_F_2026.html	2026-10-07	2026-10-07 04:00	令和8年「まつやま環境フェア」を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/20261001_bosyu.html	2026-10-05	2026-10-05 02:00	松山市地域包括支援センターの職員を募集しています
 http://www.city.matsuyama.ehime.jp/shisei/shiminkatsudo/sports/toraiasurontaikai/38triresult.html	2026-09-01	2026-10-05 01:30	第38回トライアスロン中島大会の結果を公表します
+http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seibi/anzen/fumikiri.html	2026-10-30	2026-10-30 02:30	11月1日からの10日間は「踏切事故防止キャンペーン」期間です
 http://www.city.matsuyama.ehime.jp/bosyu/wagaya.html	2026-10-02	2026-10-02 00:30	令和8年度(2026年度) わが家のリフォーム応援事業（補欠のうち申請可能な方）の本申請受付を行います。
 http://www.city.matsuyama.ehime.jp/kanko/event/sonota/2026pointokyanpe-n.html	2026-08-26	2026-10-01 06:30	「2026中央市場大感謝キャンペーン」を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/sonota/r4higasihabunouen.html	2026-10-01	2026-10-01 04:30	松山市東垣生市民農園の利用を募集します
