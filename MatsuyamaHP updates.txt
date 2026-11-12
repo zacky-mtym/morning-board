@@ -1,5 +1,5 @@
 松山市公式HP 更新情報（RSS上位30件）
-最終確認: 2026-11-12
+最終確認: 2026-11-13
 出典: https://www.city.matsuyama.ehime.jp/rss_news.xml
 日時はRSSのGMT表記
 掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。
@@ -96,8 +96,8 @@
    更新日: 2026-10-05
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
+http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sonohoka/R9-1kosodate.html	2026-11-12	2026-11-12 05:30	少年指導員（一般）（フルタイム／令和8年度会計年度任用職員）を募集します（子育て支援課）
 http://www.city.matsuyama.ehime.jp/kurashi/kosodate/kyoikushien/seisyonenc/r8ledkaisyu.html	2026-11-11	2026-11-11 00:00	青少年センター体育館アリーナ・体育室の照明器具LED改修工事等による施設の利用制限を行います
-http://www.city.matsuyama.ehime.jp/kurashi/sangyo/shokogyo/challengeshop.html	2026-11-11	2026-11-11 00:00	銀天街チャレンジショップ第3期の出店者が決定しました
 http://www.city.matsuyama.ehime.jp/shisetsu/bunka/library/ivent/matsulibseminar01.html	2026-11-10	2026-11-10 03:00	（中央図書館読書セミナー）「一行詩のリレー」を開催します
 http://www.city.matsuyama.ehime.jp/bosyu/R8_open_company.html	2026-11-10	2026-11-10 03:00	令和8年 オープン市役所～1Day体験ツアー～を実施します
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/bosikenko/hattaukouennkai.html	2026-11-10	2026-11-09 15:00	第2回　こどもの発達に心配のある保護者のための講演会の開催します
@@ -126,6 +126,7 @@ http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8shokyu1
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/jutaku/akiya/10goudou-soudankai.html	2026-10-07	2026-10-07 07:00	協定10団体による空き家の合同無料相談会　相談者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/machizukuri/kankyoumodel/kankyo_F_2026.html	2026-10-07	2026-10-07 04:00	令和8年「まつやま環境フェア」を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/20261001_bosyu.html	2026-10-05	2026-10-05 02:00	松山市地域包括支援センターの職員を募集しています
+http://www.city.matsuyama.ehime.jp/kurashi/sangyo/shokogyo/challengeshop.html	2026-11-11	2026-11-11 00:00	銀天街チャレンジショップ第3期の出店者が決定しました
 http://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/mynumberseido/center-oyasumi.html	2026-10-19	2026-10-18 15:00	令和8年（2026年）11月22日（日曜日）は松山市マイナンバーカードセンターの休業日です
 http://www.city.matsuyama.ehime.jp/shisei/shiminkatsudo/sports/toraiasurontaikai/38triresult.html	2026-09-01	2026-10-05 01:30	第38回トライアスロン中島大会の結果を公表します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seibi/anzen/fumikiri.html	2026-10-30	2026-10-30 02:30	11月1日からの10日間は「踏切事故防止キャンペーン」期間です
@@ -166,4 +167,3 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
-http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sonohoka/R9-1kosodate.html	2026-11-12	2026-11-12 05:30	少年指導員（一般）（フルタイム／令和8年度会計年度任用職員）を募集します（子育て支援課）
