@@ -4,11 +4,11 @@
 日時はRSSのGMT表記
 掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。
 
-1. 2026-11-11 00:00 青少年センター体育館アリーナ・体育室の照明器具LED改修工事等による施設の利用制限を行います
+1. 2026-11-12 05:30 少年指導員（一般）（フルタイム／令和8年度会計年度任用職員）を募集します（子育て支援課）
+   http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sonohoka/R9-1kosodate.html
+   更新日: 2026-11-12
+2. 2026-11-11 00:00 青少年センター体育館アリーナ・体育室の照明器具LED改修工事等による施設の利用制限を行います
    http://www.city.matsuyama.ehime.jp/kurashi/kosodate/kyoikushien/seisyonenc/r8ledkaisyu.html
-   更新日: 2026-11-11
-2. 2026-11-11 00:00 銀天街チャレンジショップ第3期の出店者が決定しました
-   http://www.city.matsuyama.ehime.jp/kurashi/sangyo/shokogyo/challengeshop.html
    更新日: 2026-11-11
 3. 2026-11-10 03:00 （中央図書館読書セミナー）「一行詩のリレー」を開催します
    http://www.city.matsuyama.ehime.jp/shisetsu/bunka/library/ivent/matsulibseminar01.html
@@ -166,3 +166,4 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
+http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sonohoka/R9-1kosodate.html	2026-11-12	2026-11-12 05:30	少年指導員（一般）（フルタイム／令和8年度会計年度任用職員）を募集します（子育て支援課）
