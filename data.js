@@ -527,8 +527,15 @@ window.BOARD_DATA = {
   },
   "weather": null,
   "weatherError": "<urlopen error _ssl.c:994: The handshake operation timed out>",
-  "dam": null,
-  "damError": "HTTP Error 404: Not Found",
+  "dam": {
+    "date": "2026/11/14",
+    "time": "08:20",
+    "rate": 100.0,
+    "prevRate": 100.0,
+    "deltaPt": 0.0,
+    "normal": 88.4
+  },
+  "damError": null,
   "stocks": [
     {
       "name": "テスラ",
