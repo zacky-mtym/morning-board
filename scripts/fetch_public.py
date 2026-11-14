@@ -16,42 +16,73 @@ def get(url: str) -> bytes:
         return res.read()
 
 
-def fetch_dam() -> dict:
-    outer = get(
-        "https://www1.river.go.jp/cgi-bin/DspDamData.exe?ID=1368080150020&KIND=3&PAGE=0"
-    ).decode("euc-jp", errors="replace")
-    m = re.search(r'<IFRAME src="(/html/frm/[^"]+)"', outer, re.I)
-    if not m:
-        raise RuntimeError("dam iframe not found")
-    inner = get("https://www1.river.go.jp" + m.group(1)).decode("euc-jp", errors="replace")
-    rows = re.findall(r"<TR[^>]*>(.*?)</TR>", inner, re.I | re.S)
-    parsed = []
-    for row in rows:
-        cells = [re.sub(r"<[^>]+>", "", c).strip() for c in re.findall(r"<TD[^>]*>(.*?)</TD>", row, re.I | re.S)]
-        if len(cells) >= 7 and re.match(r"\d{4}", cells[0]):
-            parsed.append(cells)
-    if not parsed:
-        raise RuntimeError("dam rows not found")
-    def num(cell):
-        cell = cell.replace(",", "").replace("−", "-").strip()
-        if not cell or cell in ("-", "―", "–"):
-            return None
-        return float(cell)
+# 松山市の観測所一覧にある石手川ダム。ofcCd + 観測種別7 + obsCd。
+ISHITE_DAM_OBS = "2256900700001"
+DAM_CLOCK = "https://www.river.go.jp/kawabou/file/system/rwCrntTime.json"
+DAM_FILES = "https://www.river.go.jp/kawabou/file/files"
 
-    usable = [c for c in parsed if num(c[6]) is not None]
-    if not usable:
-        raise RuntimeError("dam rate missing: " + repr(parsed[:3]))
-    latest, prev = usable[0], usable[1] if len(usable) > 1 else None
-    rate = num(latest[6])
-    prev_rate = num(prev[6]) if prev else None
+
+def _dam_rate(row):
+    if not row or row.get("storPcntIrrCcd") not in (0, None):
+        return None
+    value = row.get("storPcntIrr")
+    if value is None or value == "":
+        return None
+    return float(value)
+
+
+def fetch_dam() -> dict:
+    """利水貯水率。旧・水文水質DBのHTMLは2026-11-04の更新後に404。"""
+    clock = json.loads(get(DAM_CLOCK).decode("utf-8"))
+    stamp = datetime.strptime(clock["crntRwTime"], "%Y/%m/%d %H:%M").replace(tzinfo=JST)
+    stamp = stamp.replace(minute=(stamp.minute // 10) * 10, second=0, microsecond=0)
+    payload = None
+    last_error = None
+    for _ in range(6):
+        url = f"{DAM_FILES}/tmlist/dam/{stamp:%Y%m%d}/{stamp:%H%M}/{ISHITE_DAM_OBS}.json"
+        try:
+            payload = json.loads(get(url).decode("utf-8"))
+            break
+        except OSError as e:
+            last_error = e
+            stamp -= timedelta(minutes=10)
+    if payload is None:
+        raise RuntimeError("dam json not found: " + str(last_error))
+
+    latest = payload.get("obsValue") or {}
+    rate = _dam_rate(latest)
+    if rate is None:
+        for row in payload.get("min10Values") or []:
+            rate = _dam_rate(row)
+            if rate is not None:
+                latest = row
+                break
+    if rate is None:
+        raise RuntimeError("dam rate missing")
+
+    observed = datetime.strptime(latest["obsTime"], "%Y/%m/%d %H:%M")
+    yesterday = observed.date() - timedelta(days=1)
+    prev_rate = None
+    best = None
+    for row in payload.get("hrValues") or []:
+        value = _dam_rate(row)
+        if value is None or not row.get("obsTime"):
+            continue
+        when = datetime.strptime(row["obsTime"], "%Y/%m/%d %H:%M")
+        if when.date() != yesterday:
+            continue
+        dist = abs(when.hour - observed.hour)
+        if best is None or dist < best[0]:
+            best = (dist, value)
+    if best:
+        prev_rate = best[1]
     return {
-        "date": latest[0],
-        "time": latest[1],
+        "date": observed.strftime("%Y/%m/%d"),
+        "time": observed.strftime("%H:%M"),
         "rate": rate,
         "prevRate": prev_rate,
         "deltaPt": round(rate - prev_rate, 1) if prev_rate is not None else None,
         "normal": 88.4,
-        "rawLatest": latest,
     }
 
 

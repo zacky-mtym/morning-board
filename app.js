@@ -472,7 +472,7 @@
         </section>
 
         <section class="card">
-          <h2>石手川ダムの貯水率</h2>
+          <div class="wx-head"><h2>石手川ダムの貯水率</h2>${dam ? `<span class="wx-city">${esc(dam.date)} ${esc(dam.time)}</span>` : ""}</div>
           <div class="metrics">
             <div><div class="metric-label">貯水率</div><div class="metric-xl">${dam ? dam.rate.toFixed(1) + "%" : "—"}</div></div>
             <div><div class="metric-label">前日比</div><div class="metric-md" style="color:${damDeltaColor}">${esc(damDeltaText)}</div></div>
