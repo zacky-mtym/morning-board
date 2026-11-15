@@ -96,6 +96,7 @@
    更新日: 2026-10-09
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
+http://www.city.matsuyama.ehime.jp/kurashi/iryo/zukuri/syougaikenkou/walking/kenkouwalking.html	2026-11-16	2026-11-15 15:00	松山総合公園健幸ウォーキング1周年記念イベントを開催します
 http://www.city.matsuyama.ehime.jp/bosyu/shieijyutaku_teiki.html	2026-11-15	2026-11-15 00:00	市営住宅の入居者を募集します（定期募集）
 http://www.city.matsuyama.ehime.jp/shisei/tokei/toukei.html	2026-11-15	2026-11-14 15:00	令和8年11月1日現在の松山市の人口を掲載しました
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sonohoka/R9-1kosodate.html	2026-11-12	2026-11-12 05:30	少年指導員（一般）（フルタイム／令和8年度会計年度任用職員）を募集します（子育て支援課）
@@ -168,4 +169,3 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
-http://www.city.matsuyama.ehime.jp/kurashi/iryo/zukuri/syougaikenkou/walking/kenkouwalking.html	2026-11-16	2026-11-15 15:00	松山総合公園健幸ウォーキング1周年記念イベントを開催します
