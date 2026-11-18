@@ -1,5 +1,5 @@
 松山市公式HP 更新情報（RSS上位30件）
-最終確認: 2026-11-18
+最終確認: 2026-11-19
 出典: https://www.city.matsuyama.ehime.jp/rss_news.xml
 日時はRSSのGMT表記
 掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。
@@ -98,7 +98,6 @@
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sagyouin/R0901sagyouin.html	2026-11-17	2026-11-17 01:00	作業員（フルタイム／会計年度任用職員）を募集します（人事課）
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kokoro/hikikomori/hikikomorimap.html	2026-11-17	2026-11-17 00:00	松山市ひきこもり相談・支援ガイド
-http://www.city.matsuyama.ehime.jp/shisei/kakukaichiran/siminbu/siminka.html	2026-11-17	2026-11-16 23:30	システム障害から復旧し、市民課の全ての窓口業務を再開しました
 http://www.city.matsuyama.ehime.jp/shisei/machizukuri/matsuyamaeki/machidukuri/ekimachi-project.html	2026-11-16	2026-11-16 06:00	JR松山駅周辺で「つなぐ駅まちクリスマスマーケット」を開催します
 http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/furusato-puropo.html	2026-11-16	2026-11-16 01:00	松山市ふるさと納税支援業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/zukuri/syougaikenkou/walking/kenkouwalking.html	2026-11-16	2026-11-15 15:00	松山総合公園健幸ウォーキング1周年記念イベントを開催します
@@ -106,7 +105,6 @@ http://www.city.matsuyama.ehime.jp/bosyu/shieijyutaku_teiki.html	2026-11-15	2026
 http://www.city.matsuyama.ehime.jp/shisei/tokei/toukei.html	2026-11-15	2026-11-14 15:00	令和8年11月1日現在の松山市の人口を掲載しました
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sonohoka/R9-1kosodate.html	2026-11-12	2026-11-12 05:30	少年指導員（一般）（フルタイム／令和8年度会計年度任用職員）を募集します（子育て支援課）
 http://www.city.matsuyama.ehime.jp/kurashi/kosodate/kyoikushien/seisyonenc/r8ledkaisyu.html	2026-11-11	2026-11-11 00:00	青少年センター体育館アリーナ・体育室の照明器具LED改修工事等による施設の利用制限を行います
-http://www.city.matsuyama.ehime.jp/shisetsu/bunka/library/ivent/matsulibseminar01.html	2026-11-10	2026-11-10 03:00	（中央図書館読書セミナー）「一行詩のリレー」を開催します
 http://www.city.matsuyama.ehime.jp/bosyu/R8_open_company.html	2026-11-10	2026-11-10 03:00	令和8年 オープン市役所～1Day体験ツアー～を実施します
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/bosikenko/hattaukouennkai.html	2026-11-10	2026-11-09 15:00	第2回　こどもの発達に心配のある保護者のための講演会の開催します
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/jimu/R8-12jimmsai.html	2026-11-09	2026-11-08 15:00	事務補助職員（フルタイム／会計年度任用職員）（松山市斎場）を募集します（生活衛生課）
@@ -128,6 +126,8 @@ http://www.city.matsuyama.ehime.jp/kurashi/kurashi/hojokin/akiyajokyaku.html	202
 http://www.city.matsuyama.ehime.jp/bosyu/siyuchibaikyaku_r8_2.html	2026-10-22	2026-10-22 00:00	インターネット公有財産売却（市有地）を実施します
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8tuunen8.html	2026-10-20	2026-10-20 01:00	【令和8年度正規職員】技術職上級採用試験（通年）の試験結果を発表します【8月申込分】
 http://www.city.matsuyama.ehime.jp/kurashi/bosai/bousai/all/syusyuhouhou/20261015.html	2026-10-15	2026-10-15 09:00	緊急停止していた防災情報配信サービスが復旧しました
+http://www.city.matsuyama.ehime.jp/shisei/kakukaichiran/siminbu/siminka.html	2026-11-17	2026-11-16 23:30	システム障害から復旧し、市民課の全ての窓口業務を再開しました
+http://www.city.matsuyama.ehime.jp/shisetsu/bunka/library/ivent/matsulibseminar01.html	2026-11-10	2026-11-10 03:00	（中央図書館読書セミナー）「一行詩のリレー」を開催します
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8sbshokyu1.html	2026-10-09	2026-10-09 01:00	令和8年度松山市消防職員（初級）採用試験の第1次試験合格者を発表します
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8shokyu1.html	2026-10-09	2026-10-09 01:00	【令和8年度正規職員】事務職初級・初級土木・初級電気・管理栄養士・作業員・給食調理員・事務職（障がい者）・事務職（就職氷河期世代）・事務職（実務経験者）・事務職（情報処理・実務経験者）の第1次試験合格者を発表します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/jutaku/akiya/10goudou-soudankai.html	2026-10-07	2026-10-07 07:00	協定10団体による空き家の合同無料相談会　相談者を募集します
