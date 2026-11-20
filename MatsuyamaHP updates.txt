@@ -1,5 +1,5 @@
 松山市公式HP 更新情報（RSS上位30件）
-最終確認: 2026-11-20
+最終確認: 2026-11-21
 出典: https://www.city.matsuyama.ehime.jp/rss_news.xml
 日時はRSSのGMT表記
 掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。
@@ -96,7 +96,6 @@
    更新日: 2026-10-23
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
-http://www.city.matsuyama.ehime.jp/kanko/event/sonota/2026pointokyanpe-n.html	2026-11-19	2026-11-19 07:00	「2026中央市場大感謝キャンペーン」を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/gomi/haishori/haigasukensa.html	2026-11-19	2026-11-19 04:00	産業廃棄物処理施設（焼却施設）での排ガスの行政検査結果を公表します
 http://www.city.matsuyama.ehime.jp/kurashi/kosodate/boshi/2026_kodomomannka.html	2026-11-19	2026-11-19 02:00	「2026 こどもまんなか松山大賞」表彰式を実施しました
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/ninkituki/goukaku/R8syakaihukushi.html	2026-11-19	2026-11-19 01:00	社会福祉士（任期付職員／育児休業職員の代替職員）採用試験（令和8年(2026年)11月10日実施）の合格者を発表します
@@ -127,6 +126,7 @@ http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/ninkituki/goukaku/R81013hoke
 http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/sousenR8puropo.html	2026-10-26	2026-10-26 09:00	松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
 http://www.city.matsuyama.ehime.jp/kanko/event/bunka/spocity2026tyushi.html	2026-10-24	2026-10-24 05:00	第72回松山市民体育祭2026と松山市スポーツ推進委員表彰式を中止します
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kansensho/tyuui/r8mashin.html	2026-10-23	2026-10-23 07:00	麻しん（はしか）患者の発生についてお知らせします
+http://www.city.matsuyama.ehime.jp/kanko/event/sonota/2026pointokyanpe-n.html	2026-11-19	2026-11-19 07:00	「2026中央市場大感謝キャンペーン」を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/hojokin/akiyajokyaku.html	2026-10-22	2026-10-22 04:00	令和8年度（2026年度）老朽危険空家除却事業補助金の第3期受付を開始します
 http://www.city.matsuyama.ehime.jp/bosyu/siyuchibaikyaku_r8_2.html	2026-10-22	2026-10-22 00:00	インターネット公有財産売却（市有地）を実施します
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8tuunen8.html	2026-10-20	2026-10-20 01:00	【令和8年度正規職員】技術職上級採用試験（通年）の試験結果を発表します【8月申込分】
