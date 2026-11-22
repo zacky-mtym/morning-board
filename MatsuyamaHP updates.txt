@@ -96,6 +96,7 @@
    更新日: 2026-10-24
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
+http://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/mynumberseido/center-oyasumi.html	2026-11-23	2026-11-22 15:00	令和8年（2026年）12月20日（日曜日）は松山市マイナンバーカードセンターの休業日です
 http://www.city.matsuyama.ehime.jp/kurashi/gomi/haishori/haigasukensa.html	2026-11-19	2026-11-19 04:00	産業廃棄物処理施設（焼却施設）での排ガスの行政検査結果を公表します
 http://www.city.matsuyama.ehime.jp/kurashi/kosodate/boshi/2026_kodomomannka.html	2026-11-19	2026-11-19 02:00	「2026 こどもまんなか松山大賞」表彰式を実施しました
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/ninkituki/goukaku/R8syakaihukushi.html	2026-11-19	2026-11-19 01:00	社会福祉士（任期付職員／育児休業職員の代替職員）採用試験（令和8年(2026年)11月10日実施）の合格者を発表します
@@ -139,7 +140,6 @@ http://www.city.matsuyama.ehime.jp/kurashi/kurashi/jutaku/akiya/10goudou-soudank
 http://www.city.matsuyama.ehime.jp/shisei/machizukuri/kankyoumodel/kankyo_F_2026.html	2026-10-07	2026-10-07 04:00	令和8年「まつやま環境フェア」を開催します
 http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/20261001_bosyu.html	2026-10-05	2026-10-05 02:00	松山市地域包括支援センターの職員を募集しています
 http://www.city.matsuyama.ehime.jp/kurashi/sangyo/shokogyo/challengeshop.html	2026-11-11	2026-11-11 00:00	銀天街チャレンジショップ第3期の出店者が決定しました
-http://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/mynumberseido/center-oyasumi.html	2026-11-23	2026-11-22 15:00	令和8年（2026年）12月20日（日曜日）は松山市マイナンバーカードセンターの休業日です
 http://www.city.matsuyama.ehime.jp/shisei/shiminkatsudo/sports/toraiasurontaikai/38triresult.html	2026-09-01	2026-10-05 01:30	第38回トライアスロン中島大会の結果を公表します
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/seibi/anzen/fumikiri.html	2026-10-30	2026-10-30 02:30	11月1日からの10日間は「踏切事故防止キャンペーン」期間です
 http://www.city.matsuyama.ehime.jp/bosyu/wagaya.html	2026-10-02	2026-10-02 00:30	令和8年度(2026年度) わが家のリフォーム応援事業（補欠のうち申請可能な方）の本申請受付を行います。
