@@ -4,96 +4,96 @@
 日時はRSSのGMT表記
 掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。
 
-1. 2026-11-22 15:00 令和8年（2026年）12月20日（日曜日）は松山市マイナンバーカードセンターの休業日です
+1. 2026-11-23 00:00 林野火災に関する注意報を発令しました
+   http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sbkasaiyobo/rinnyakasityuuihou.html
+   更新日: 2026-11-23
+2. 2026-11-22 15:00 令和8年（2026年）12月20日（日曜日）は松山市マイナンバーカードセンターの休業日です
    http://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/mynumberseido/center-oyasumi.html
    更新日: 2026-11-23
-2. 2026-11-19 04:00 産業廃棄物処理施設（焼却施設）での排ガスの行政検査結果を公表します
+3. 2026-11-19 04:00 産業廃棄物処理施設（焼却施設）での排ガスの行政検査結果を公表します
    http://www.city.matsuyama.ehime.jp/kurashi/gomi/haishori/haigasukensa.html
    更新日: 2026-11-19
-3. 2026-11-19 02:00 「2026 こどもまんなか松山大賞」表彰式を実施しました
+4. 2026-11-19 02:00 「2026 こどもまんなか松山大賞」表彰式を実施しました
    http://www.city.matsuyama.ehime.jp/kurashi/kosodate/boshi/2026_kodomomannka.html
    更新日: 2026-11-19
-4. 2026-11-19 01:00 社会福祉士（任期付職員／育児休業職員の代替職員）採用試験（令和8年(2026年)11月10日実施）の合格者を発表します
+5. 2026-11-19 01:00 社会福祉士（任期付職員／育児休業職員の代替職員）採用試験（令和8年(2026年)11月10日実施）の合格者を発表します
    http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/ninkituki/goukaku/R8syakaihukushi.html
    更新日: 2026-11-19
-5. 2026-11-19 01:00 令和8年(2026年)11月実施松山市任期付職員（育児休業職員の代替職員）採用試験の第1次試験合格者を発表します
+6. 2026-11-19 01:00 令和8年(2026年)11月実施松山市任期付職員（育児休業職員の代替職員）採用試験の第1次試験合格者を発表します
    http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/ninkituki/goukaku/R81108ninkijimukekka.html
    更新日: 2026-11-19
-6. 2026-11-17 01:00 作業員（フルタイム／会計年度任用職員）を募集します（人事課）
+7. 2026-11-17 01:00 作業員（フルタイム／会計年度任用職員）を募集します（人事課）
    http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sagyouin/R0901sagyouin.html
    更新日: 2026-11-17
-7. 2026-11-17 00:00 松山市ひきこもり相談・支援ガイド
+8. 2026-11-17 00:00 松山市ひきこもり相談・支援ガイド
    http://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kokoro/hikikomori/hikikomorimap.html
    更新日: 2026-11-17
-8. 2026-11-16 06:00 JR松山駅周辺で「つなぐ駅まちクリスマスマーケット」を開催します
+9. 2026-11-16 06:00 JR松山駅周辺で「つなぐ駅まちクリスマスマーケット」を開催します
    http://www.city.matsuyama.ehime.jp/shisei/machizukuri/matsuyamaeki/machidukuri/ekimachi-project.html
    更新日: 2026-11-16
-9. 2026-11-16 01:00 松山市ふるさと納税支援業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
+10. 2026-11-16 01:00 松山市ふるさと納税支援業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
    http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/furusato-puropo.html
    更新日: 2026-11-16
-10. 2026-11-15 15:00 松山総合公園健幸ウォーキング1周年記念イベントを開催します
+11. 2026-11-15 15:00 松山総合公園健幸ウォーキング1周年記念イベントを開催します
    http://www.city.matsuyama.ehime.jp/kurashi/iryo/zukuri/syougaikenkou/walking/kenkouwalking.html
    更新日: 2026-11-16
-11. 2026-11-15 00:00 市営住宅の入居者を募集します（定期募集）
+12. 2026-11-15 00:00 市営住宅の入居者を募集します（定期募集）
    http://www.city.matsuyama.ehime.jp/bosyu/shieijyutaku_teiki.html
    更新日: 2026-11-15
-12. 2026-11-14 15:00 令和8年11月1日現在の松山市の人口を掲載しました
+13. 2026-11-14 15:00 令和8年11月1日現在の松山市の人口を掲載しました
    http://www.city.matsuyama.ehime.jp/shisei/tokei/toukei.html
    更新日: 2026-11-15
-13. 2026-11-12 05:30 少年指導員（一般）（フルタイム／令和8年度会計年度任用職員）を募集します（子育て支援課）
+14. 2026-11-12 05:30 少年指導員（一般）（フルタイム／令和8年度会計年度任用職員）を募集します（子育て支援課）
    http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/sonohoka/R9-1kosodate.html
    更新日: 2026-11-12
-14. 2026-11-11 00:00 青少年センター体育館アリーナ・体育室の照明器具LED改修工事等による施設の利用制限を行います
+15. 2026-11-11 00:00 青少年センター体育館アリーナ・体育室の照明器具LED改修工事等による施設の利用制限を行います
    http://www.city.matsuyama.ehime.jp/kurashi/kosodate/kyoikushien/seisyonenc/r8ledkaisyu.html
    更新日: 2026-11-11
-15. 2026-11-10 03:00 令和8年 オープン市役所～1Day体験ツアー～を実施します
+16. 2026-11-10 03:00 令和8年 オープン市役所～1Day体験ツアー～を実施します
    http://www.city.matsuyama.ehime.jp/bosyu/R8_open_company.html
    更新日: 2026-11-10
-16. 2026-11-09 15:00 第2回　こどもの発達に心配のある保護者のための講演会の開催します
+17. 2026-11-09 15:00 第2回　こどもの発達に心配のある保護者のための講演会の開催します
    http://www.city.matsuyama.ehime.jp/kurashi/iryo/bosikenko/hattaukouennkai.html
    更新日: 2026-11-10
-17. 2026-11-08 15:00 事務補助職員（フルタイム／会計年度任用職員）（松山市斎場）を募集します（生活衛生課）
+18. 2026-11-08 15:00 事務補助職員（フルタイム／会計年度任用職員）（松山市斎場）を募集します（生活衛生課）
    http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/rinji/jimu/R8-12jimmsai.html
    更新日: 2026-11-09
-18. 2026-11-06 05:30 令和8年度松山市消防職員（初級）採用試験の第2次試験合格者を発表します
+19. 2026-11-06 05:30 令和8年度松山市消防職員（初級）採用試験の第2次試験合格者を発表します
    http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8sbshokyu2.html
    更新日: 2026-11-06
-19. 2026-11-06 04:00 【令和8年度正規職員】事務職初級・初級土木・管理栄養士・作業員・給食調理員・事務職（障がい者）・事務職（就職氷河期世代）・事務職（実務経験者）・事務職（情報処理・実務経験者）の第2次試験合格者と実務経験者（社会福祉士・土木・機械・保育士）の第1次試験合格者を発表します
+20. 2026-11-06 04:00 【令和8年度正規職員】事務職初級・初級土木・管理栄養士・作業員・給食調理員・事務職（障がい者）・事務職（就職氷河期世代）・事務職（実務経験者）・事務職（情報処理・実務経験者）の第2次試験合格者と実務経験者（社会福祉士・土木・機械・保育士）の第1次試験合格者を発表します
    http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8shokyu2.html
    更新日: 2026-11-06
-20. 2026-11-06 01:00 松山市滞納整理システム構築業務委託に関する意見招請依頼（RFC）を実施します
+21. 2026-11-06 01:00 松山市滞納整理システム構築業務委託に関する意見招請依頼（RFC）を実施します
    http://www.city.matsuyama.ehime.jp/bosyu/tainouseiri-rfc.html
    更新日: 2026-11-06
-21. 2026-11-04 15:00 「みんなの消防フェスタ・防災シンポジウム2026」を開催します
+22. 2026-11-04 15:00 「みんなの消防フェスタ・防災シンポジウム2026」を開催します
    http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sboshirase/fesuta.html
    更新日: 2026-11-05
-22. 2026-11-04 07:00 三津浜地区シェアショップ「みつのわA・B・D区画」の出店者を募集します
+23. 2026-11-04 07:00 三津浜地区シェアショップ「みつのわA・B・D区画」の出店者を募集します
    http://www.city.matsuyama.ehime.jp/bosyu/mitsunowa-acd.html
    更新日: 2026-11-04
-23. 2026-11-04 05:30 松山市庁舎本館及び別館内で広告付き催事案内板設置事業を行う広告代理店を募集します
+24. 2026-11-04 05:30 松山市庁舎本館及び別館内で広告付き催事案内板設置事業を行う広告代理店を募集します
    http://www.city.matsuyama.ehime.jp/bosyu/kokoku/r9saiji.html
    更新日: 2026-11-04
-24. 2026-11-02 09:00 令和8年秋季火災予防運動を実施します
+25. 2026-11-02 09:00 令和8年秋季火災予防運動を実施します
    http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sbgyoji/8harukasaiyobou.html
    更新日: 2026-11-02
-25. 2026-11-02 08:30 令和8年（2026年）11月の地域包括支援センター行事予定を掲載しました
+26. 2026-11-02 08:30 令和8年（2026年）11月の地域包括支援センター行事予定を掲載しました
    http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_center/hokatsuevent/202611_gyoujiyotei.html
    更新日: 2026-11-02
-26. 2026-11-01 00:00 「ご当地こなもんサミット2027in松山」の出店者を募集します
+27. 2026-11-01 00:00 「ご当地こなもんサミット2027in松山」の出店者を募集します
    http://www.city.matsuyama.ehime.jp/bosyu/konamon2027.html
    更新日: 2026-11-01
-27. 2026-10-30 04:00 松山市内や近隣市町の文化施設情報について
+28. 2026-10-30 04:00 松山市内や近隣市町の文化施設情報について
    http://www.city.matsuyama.ehime.jp/shisetsu/bunka/simin/siminnkaikandaitaisi.html
    更新日: 2026-10-30
-28. 2026-10-27 01:00 保健師（任期付職員／育児休業職員の代替職員）採用試験（令和8年(2026年)10月13日実施）の合格者を発表します
+29. 2026-10-27 01:00 保健師（任期付職員／育児休業職員の代替職員）採用試験（令和8年(2026年)10月13日実施）の合格者を発表します
    http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/ninkituki/goukaku/R81013hokenshikekka.html
    更新日: 2026-10-27
-29. 2026-10-26 09:00 松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
+30. 2026-10-26 09:00 松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
    http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/sousenR8puropo.html
    更新日: 2026-10-26
-30. 2026-10-24 05:00 第72回松山市民体育祭2026と松山市スポーツ推進委員表彰式を中止します
-   http://www.city.matsuyama.ehime.jp/kanko/event/bunka/spocity2026tyushi.html
-   更新日: 2026-10-24
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
 http://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/mynumberseido/center-oyasumi.html	2026-11-23	2026-11-22 15:00	令和8年（2026年）12月20日（日曜日）は松山市マイナンバーカードセンターの休業日です
@@ -176,3 +176,4 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
+http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sbkasaiyobo/rinnyakasityuuihou.html	2026-11-23	2026-11-23 00:00	林野火災に関する注意報を発令しました
