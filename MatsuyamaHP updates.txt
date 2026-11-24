@@ -96,7 +96,6 @@
    更新日: 2026-10-26
 
 【確認済み】 URL、ページの更新日、RSSのGMT、見出し。消さない。
-http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sbkasaiyobo/142221202611240850.html	2026-11-24	2026-11-24 00:00	林野火災に関する注意報を解除しました
 http://www.city.matsuyama.ehime.jp/shisetsu/bunka/library/tosyokanoshirase/centrallibrenewal.html	2026-11-24	2026-11-24 00:00	中央図書館は大規模改修工事に伴い休館し、その間、代替サービスを実施します
 http://www.city.matsuyama.ehime.jp/shisei/keikaku/danjo/wellbeingsummit2026.html	2026-11-24	2026-11-24 00:00	まつやまウェルビーイングサミット2026の参加者を募集します
 http://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/mynumberseido/center-oyasumi.html	2026-11-23	2026-11-22 15:00	令和8年（2026年）12月20日（日曜日）は松山市マイナンバーカードセンターの休業日です
@@ -126,9 +125,10 @@ http://www.city.matsuyama.ehime.jp/kurashi/kaigohoken/koureisyashien/shien_cente
 http://www.city.matsuyama.ehime.jp/bosyu/konamon2027.html	2026-11-01	2026-11-01 00:00	「ご当地こなもんサミット2027in松山」の出店者を募集します
 http://www.city.matsuyama.ehime.jp/shisetsu/bunka/simin/siminnkaikandaitaisi.html	2026-10-30	2026-10-30 04:00	松山市内や近隣市町の文化施設情報について
 http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/ninkituki/goukaku/R81013hokenshikekka.html	2026-10-27	2026-10-27 01:00	保健師（任期付職員／育児休業職員の代替職員）採用試験（令和8年(2026年)10月13日実施）の合格者を発表します
+http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/sousenR8puropo.html	2026-10-26	2026-10-26 09:00	松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
+http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sbkasaiyobo/142221202611240850.html	2026-11-24	2026-11-24 00:00	林野火災に関する注意報を解除しました
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/zukuri/syougaikenkou/walking/kenkouwalking.html	2026-11-16	2026-11-15 15:00	松山総合公園健幸ウォーキング1周年記念イベントを開催します
 http://www.city.matsuyama.ehime.jp/kurashi/bosai/sbbousai/sbkasaiyobo/rinnyakasityuuihou.html	2026-11-23	2026-11-23 00:00	林野火災に関する注意報を発令しました
-http://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/gyoumuitaku/info/r8itaku/sousenR8puropo.html	2026-10-26	2026-10-26 09:00	松山しごと創造センター運営事業業務委託（債務負担行為）（公募型プロポーザル方式）（ふるさと納税・経営支援課）
 http://www.city.matsuyama.ehime.jp/kanko/event/bunka/spocity2026tyushi.html	2026-10-24	2026-10-24 05:00	第72回松山市民体育祭2026と松山市スポーツ推進委員表彰式を中止します
 http://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kansensho/tyuui/r8mashin.html	2026-10-23	2026-10-23 07:00	麻しん（はしか）患者の発生についてお知らせします
 http://www.city.matsuyama.ehime.jp/kanko/event/sonota/2026pointokyanpe-n.html	2026-11-19	2026-11-19 07:00	「2026中央市場大感謝キャンペーン」を開催します
