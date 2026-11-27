@@ -4,9 +4,9 @@
 日時はRSSのGMT表記
 掲載条件: ボードにはページの「更新日」が昨日または今日のものを出す。確認済みと同じ更新日の再掲や、RSSの順位の変化だけでは出さない。
 
-1. 2026-11-26 07:30 【県市連携事業】猫の譲渡前講習会
-   http://www.city.matsuyama.ehime.jp/kurashi/kurashi/aigo/hapimaru/event/inunekojyoutokai.html
-   更新日: 2026-11-26
+1. 2026-11-26 23:30 松山市自殺対策推進委員会の委員を募集します
+   http://www.city.matsuyama.ehime.jp/bosyu/jisatutaisakuiinn.html
+   更新日: 2026-12-08
 2. 2026-11-26 01:00 【令和8年度(2026年度)正規職員】技術職上級採用試験（通年）の合格者を発表します【9月申込分】
    http://www.city.matsuyama.ehime.jp/shisei/saiyojoho/seikibosyu/goukaku/R8tuunen9_1.html
    更新日: 2026-11-26
@@ -182,3 +182,4 @@ http://www.city.matsuyama.ehime.jp/bosyu/cyclerogaining2026.html	2026-10-16	2026
 http://www.city.matsuyama.ehime.jp/kurashi/kurashi/josuido/keikaku/kassuikiroku/kassui_20260410.html	2026-04-24	2026-10-19 08:00	渇水対策を中止しました
 http://www.city.matsuyama.ehime.jp/bosyu/furusatowalk2026.html		2026-10-18 15:00	『坂の上の雲』のまちを歩こう27 松山ふるさとウォークの参加者を募集します
 http://www.city.matsuyama.ehime.jp/shisei/jinken/jinkenishikichosa/isikityousa.html		2026-10-16 00:30	2017（平成29）年度人権問題に関する市民意識調査の結果を公表します
+http://www.city.matsuyama.ehime.jp/bosyu/jisatutaisakuiinn.html	2026-12-08	2026-11-26 23:30	松山市自殺対策推進委員会の委員を募集します
